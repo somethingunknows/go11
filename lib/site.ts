@@ -1,13 +1,27 @@
 export const SITE_NAME = "GoPlay11 APK";
 export const SITE_URL = "https://goplay11-apk.com";
 export const LOGO_PATH = "/go11.png";
-export const SOCIAL_PREVIEW_PATH = "/social-preview.jpg";
+export const SOCIAL_PREVIEW_PATH = "/goplay11-social.jpg";
 
 export const AFFILIATE_LINK =
   "https://web-in.goplaycom.com/en/affiliate-invited?c=6FHW28S2&s=3";
 export const RECOMMENDED_PLATFORM_URL = "https://www.comegameapp.com";
 export const AFFILIATE_REL = "nofollow sponsored noopener noreferrer";
 export const EXTERNAL_REL = "nofollow noopener noreferrer";
+
+export const PLATFORM_LINKS = [
+  { href: "https://ak7x.games",   label: "ak7x App — Mobile Gaming" },
+  { href: "https://habetapk.com", label: "Habet App — Sports Betting" },
+  { href: "https://dhan7.xyz",    label: "Dhan 7 App — Real Money Gaming" },
+  { href: "https://ak7-apk.com",  label: "AK7 APK — Gaming App" },
+] as const;
+
+export const ANCHOR = {
+  download:  "Download GoPlay 11 APK",
+  referral:  "GoPlay 11 referral code",
+  howToPlay: "how to play GoPlay 11",
+  loginReg:  "GoPlay 11 login and register",
+} as const;
 
 export const DEFAULT_TITLE = "Go Play 11 APK Download and GoPlay11 Fantasy Guide";
 export const DEFAULT_DESCRIPTION =
@@ -133,44 +147,51 @@ export type FaqItem = {
 
 export const HOME_FAQS: FaqItem[] = [
   {
-    question: "How do I complete the Go Play 11 APK download quickly?",
+    // Topic 1: What GoPlay 11 is
+    question: "What is GoPlay 11?",
     answer:
-      "Use the official GoPlay11 download page, allow trusted installs on Android, and finish registration before match lock to avoid missing contest entry windows.",
+      "GoPlay 11 (also written GoPlay11 or Go Play 11) is an Android fantasy cricket app where you build virtual teams of real players, join contests, and win real cash based on their live match performance. It is not available on the Google Play Store — you download it as an APK directly from the official site.",
   },
   {
-    question: "Is Goplay11 safe or real for fantasy players in India?",
+    // Topic 2: How to download the APK
+    question: "How do I download the GoPlay 11 APK?",
     answer:
-      "Use verified links, review permissions, and check support/payout policies before adding wallet funds. Safe play starts with source verification and disciplined bankroll management.",
+      "Visit the GoPlay 11 download page, tap the download button to save the APK file, then go to your Android Settings and enable 'Install from Unknown Sources' (or 'Install Unknown Apps' on Android 8+). Open the downloaded file, tap Install, and complete registration before your first match locks.",
   },
   {
-    question: "Can I use a Goplay11 referral code while signing up?",
+    // Topic 3: Whether it is free
+    question: "Is GoPlay 11 free to download and use?",
     answer:
-      "Yes. Add the referral code during registration to unlock welcome offers and referral incentives where available in current campaign terms.",
+      "Yes — the GoPlay 11 APK is completely free to download and install. There are no subscription fees. You can join free-entry practice contests to learn the game before depositing any money into your wallet.",
   },
   {
-    question: "What is the best beginner strategy for fantasy contests?",
+    // Topic 4: Play Store availability
+    question: "Is GoPlay 11 available on the Google Play Store?",
     answer:
-      "Start with small-entry contests, choose role-balanced teams, and review every match outcome. Process quality improves long-term performance more than high-risk entries.",
+      "No. GoPlay 11 is not listed on the Google Play Store. You must download the APK directly from the official GoPlay 11 website. Always use the official link to ensure you get the genuine, unmodified app.",
   },
   {
-    question: "How often should I update my fantasy lineup process?",
+    // Topic 5: How fantasy cricket works
+    question: "How does fantasy cricket work on GoPlay 11?",
     answer:
-      "Run a weekly review cycle. Track captain picks, role balance, and contest selection accuracy so you can improve decisions without changing strategy every day.",
+      "You select 11 real cricketers from an upcoming match within a salary cap, then pick a Captain (2× points) and Vice-Captain (1.5× points). Points are awarded based on each player's actual performance — runs, wickets, catches, and more. The higher your team's total points at the end of the match, the better your contest ranking and prize.",
   },
   {
-    question: "Which pages should I read after downloading the app?",
+    // Topic 6: The referral code
+    question: "How does the GoPlay 11 referral code work?",
     answer:
-      "Follow this path for best onboarding: Download page, APK setup guide, Login/Register flow, Referral Code page, and then the How To Play strategy guide.",
+      "Enter a referral code in the designated field during registration to unlock welcome bonuses for both you and the person who referred you. You can also share your own referral code with friends — each successful sign-up earns you referral rewards as per the current campaign terms.",
   },
   {
-    question: "How can I reduce risk while playing fantasy games online?",
+    // Topic 7: Android version requirements
+    question: "What Android version do I need to run GoPlay 11?",
     answer:
-      "Set a fixed budget, cap entry size per contest, and avoid tilt entries after losses. Responsible bankroll limits protect your account and decision quality.",
+      "GoPlay 11 requires Android 5.0 (Lollipop) or higher. Most Android phones released after 2015 meet this requirement. If you are on Android 7 or below, enable Unknown Sources in Security settings; on Android 8 and above, grant install permission to your browser or file manager when prompted.",
   },
   {
-    question: "Do I need to track scores and post-match performance?",
+    question: "Is GoPlay 11 safe for fantasy players in India?",
     answer:
-      "Yes. Match reviews help you spot repeated lineup mistakes, improve captain/vice-captain logic, and build a stable strategy framework over time.",
+      "GoPlay 11 is a real-money fantasy sports platform. Always download from the official site, review the app permissions it requests, and check the support and payout policies before adding funds. Start with free contests to get comfortable with the platform before depositing.",
   },
 ];
 

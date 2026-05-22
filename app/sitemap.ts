@@ -6,19 +6,19 @@ import { SITE_URL } from "@/lib/site";
 const STATIC_LAST_MODIFIED = new Date();
 
 const CORE_ROUTES = [
-  { path: "/", changeFrequency: "daily" as const, priority: 1 },
-  { path: "/about", changeFrequency: "monthly" as const, priority: 0.78 },
-  { path: "/editorial-policy", changeFrequency: "monthly" as const, priority: 0.74 },
+  { path: "/", changeFrequency: "daily" as const, priority: 1.0 },
   { path: "/download", changeFrequency: "daily" as const, priority: 0.95 },
-  { path: "/goplay11-app-download", changeFrequency: "weekly" as const, priority: 0.91 },
-  { path: "/goplay11-fantasy-app", changeFrequency: "weekly" as const, priority: 0.9 },
-  { path: "/apk", changeFrequency: "weekly" as const, priority: 0.9 },
-  { path: "/how-to-play", changeFrequency: "weekly" as const, priority: 0.86 },
-  { path: "/responsible-play", changeFrequency: "monthly" as const, priority: 0.8 },
-  { path: "/login-register", changeFrequency: "weekly" as const, priority: 0.82 },
-  { path: "/referral-code", changeFrequency: "weekly" as const, priority: 0.88 },
-  { path: "/contact", changeFrequency: "monthly" as const, priority: 0.66 },
-  { path: "/blog", changeFrequency: "weekly" as const, priority: 0.84 },
+  { path: "/blog", changeFrequency: "weekly" as const, priority: 0.85 },
+  { path: "/goplay11-app-download", changeFrequency: "weekly" as const, priority: 0.85 },
+  { path: "/goplay11-fantasy-app", changeFrequency: "weekly" as const, priority: 0.8 },
+  { path: "/how-to-play", changeFrequency: "weekly" as const, priority: 0.8 },
+  { path: "/referral-code", changeFrequency: "weekly" as const, priority: 0.75 },
+  { path: "/login-register", changeFrequency: "weekly" as const, priority: 0.75 },
+  { path: "/apk", changeFrequency: "weekly" as const, priority: 0.75 },
+  { path: "/about", changeFrequency: "monthly" as const, priority: 0.5 },
+  { path: "/responsible-play", changeFrequency: "monthly" as const, priority: 0.5 },
+  { path: "/editorial-policy", changeFrequency: "monthly" as const, priority: 0.5 },
+  { path: "/contact", changeFrequency: "monthly" as const, priority: 0.4 },
 ];
 
 function buildLanguageAlternates(path: string) {
@@ -46,7 +46,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${SITE_URL}/blog/${post.slug}`,
     lastModified: new Date(post.updatedAt),
     changeFrequency: "monthly",
-    priority: 0.78,
+    priority: 0.7,
     alternates: buildLanguageAlternates(`/blog/${post.slug}`),
   }));
 

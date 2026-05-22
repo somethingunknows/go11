@@ -59,7 +59,7 @@ export const metadata: Metadata = {
         url: SOCIAL_PREVIEW_PATH,
         width: 1200,
         height: 630,
-        alt: "GoPlay11 Fantasy Cricket App",
+        alt: "GoPlay 11 App — Download Free APK for Fantasy Cricket",
       },
     ],
   },

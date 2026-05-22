@@ -17,6 +17,9 @@ export type BlogPost = {
   keywords: string[];
   sections: BlogSection[];
   faq?: FaqItem[];
+  category: "goplay11" | "habet";
+  ogTitle?: string;
+  seoTitle?: string;
 };
 
 export const BLOG_POSTS: BlogPost[] = [
@@ -40,6 +43,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "habet account management",
       "ha bet app login",
     ],
+    category: "habet",
     sections: [
       {
         heading: "Understanding Habet Account Security",
@@ -166,6 +170,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "habet wicket betting",
       "how to bet on habet",
     ],
+    category: "habet",
     sections: [
       {
         heading: "What are Cricket Betting Markets?",
@@ -290,6 +295,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "habet betting guide",
       "profitable betting strategy",
     ],
+    category: "habet",
     sections: [
       {
         heading: "Research Before Betting - The Foundation of Success",
@@ -1653,7 +1659,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
   },
   {
-    slug: "fantasy-cricket-scoring-system-explained",
+    slug: "fantasy-cricket-scoring-system-guide-2026",
     title: "Fantasy Cricket Scoring System Explained: Points, Roles, and Bonuses",
     description:
       "Learn how fantasy cricket scoring works on GoPlay11 — batting points, bowling points, fielding bonuses, and captain multipliers explained clearly.",
@@ -1746,7 +1752,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
   },
   {
-    slug: "fantasy-cricket-bankroll-management-guide",
+    slug: "fantasy-cricket-bankroll-management-complete-guide-2026",
     title: "Fantasy Cricket Bankroll Management: How to Play Smart and Last Long",
     description:
       "Learn how to manage your fantasy cricket budget on GoPlay11 — entry sizing, contest selection, and loss limits that protect your account long-term.",
@@ -2134,8 +2140,25 @@ export const BLOG_POSTS: BlogPost[] = [
   },
 ];
 
+export function validateBlogPosts(posts: BlogPost[]): void {
+  const seen = new Map<string, number>();
+  for (let i = 0; i < posts.length; i++) {
+    const slug = posts[i]!.slug;
+    if (seen.has(slug)) {
+      throw new Error(
+        `Duplicate blog slug detected: "${slug}"\n` +
+          `  Conflicting entries at indices ${seen.get(slug)} and ${i}.`
+      );
+    }
+    seen.set(slug, i);
+  }
+}
+validateBlogPosts(BLOG_POSTS); // runs at module load
+
 export function getAllPosts(): BlogPost[] {
-  return BLOG_POSTS;
+  const goplay11 = BLOG_POSTS.filter((p) => p.category === "goplay11");
+  const habet = BLOG_POSTS.filter((p) => p.category === "habet");
+  return [...goplay11, ...habet];
 }
 
 export function getPostBySlug(slug: string): BlogPost | undefined {

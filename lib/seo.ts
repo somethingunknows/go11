@@ -27,6 +27,8 @@ type MetadataOptions = {
   keywords?: string[];
   openGraphType?: "website" | "article";
   noIndex?: boolean;
+  ogTitle?: string;
+  twitterTitle?: string;
 };
 
 type BreadcrumbItem = {
@@ -108,7 +110,7 @@ export function buildMetadata(options: MetadataOptions = {}): Metadata {
     openGraph: {
       type: options.openGraphType ?? "website",
       url: canonicalUrl,
-      title,
+      title: options.ogTitle ?? title,
       description,
       siteName: SITE_NAME,
       locale: "en_IN",
@@ -117,13 +119,13 @@ export function buildMetadata(options: MetadataOptions = {}): Metadata {
           url: `${SITE_URL}${SOCIAL_PREVIEW_PATH}`,
           width: 1200,
           height: 630,
-          alt: "GoPlay11 Fantasy Cricket App",
+          alt: "GoPlay 11 App — Download Free APK for Fantasy Cricket",
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title,
+      title: options.twitterTitle ?? title,
       description,
       images: [`${SITE_URL}${SOCIAL_PREVIEW_PATH}`],
     },
