@@ -66,7 +66,7 @@ Implement a comprehensive SEO overhaul for goplay11-apk.com across three layers:
     - _Requirements: 14.5, 14.6_
 
 
-- [-] 5. Update `next.config.ts` — 301 redirects for renamed slugs
+- [x] 5. Update `next.config.ts` — 301 redirects for renamed slugs
   - Add two permanent redirect entries to the `redirects()` array:
     - `/blog/fantasy-cricket-scoring-system-explained` → `/blog/fantasy-cricket-scoring-system-guide-2026`
     - `/blog/fantasy-cricket-bankroll-management-guide` → `/blog/fantasy-cricket-bankroll-management-complete-guide-2026`
@@ -98,7 +98,7 @@ Implement a comprehensive SEO overhaul for goplay11-apk.com across three layers:
   - _Requirements: 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 5.5, 22.1, 22.3_
 
 
-- [~] 9. Rewrite `app/download/page.tsx` — 700+ word install guide
+- [-] 9. Rewrite `app/download/page.tsx` — 700+ word install guide
   - Set metadata title, description, and keywords per Req 8.8, 8.9, 8.10
   - Set H1 to: `GoPlay 11 APK Download — Free Install Guide for Android (2026)`
   - Add APK details table with all rows from Req 8.2 (App Name, Also Known As, Platform, Min Android, Category, File Type, Price, Last Updated, availability note)
@@ -118,7 +118,7 @@ Implement a comprehensive SEO overhaul for goplay11-apk.com across three layers:
   - _Requirements: 1.6, 6.1, 6.2, 6.3, 6.4, 9.7_
 
 
-- [ ] 11. Update `app/blog/page.tsx` — category filter UI and updated metadata
+- [x] 11. Update `app/blog/page.tsx` — category filter UI and updated metadata
   - Update metadata title to `"GoPlay 11 Blog — Fantasy Cricket Guides & Tips | GoPlay11"` per Req 13.5
   - Update metadata description to the exact string from Req 10.7; set keywords per Req 11.4
   - Set `canonicalPath: "/blog"` per Req 13.6
@@ -126,7 +126,7 @@ Implement a comprehensive SEO overhaul for goplay11-apk.com across three layers:
   - `getAllPosts()` already returns goplay11-first order — no additional sorting needed
   - _Requirements: 10.7, 11.4, 13.4, 13.5, 13.6, 13.7_
 
-- [~] 12. Rewrite `app/login-register/page.tsx` — 500+ word content
+- [-] 12. Rewrite `app/login-register/page.tsx` — 500+ word content
   - Set H1 to: `GoPlay 11 Login — How to Sign In to Your GoPlay11 Account`
   - Set metadata title to: `GoPlay 11 Login & Register — Sign In to GoPlay11 App 2026`
   - Set metadata description per Req 10.6; set keywords per Req 11.1
@@ -136,7 +136,7 @@ Implement a comprehensive SEO overhaul for goplay11-apk.com across three layers:
   - _Requirements: 7.1, 7.2, 7.3, 10.6, 11.1, 17.1, 17.2, 17.3, 17.4, 17.11, 22.1, 22.2_
 
 
-- [~] 13. Rewrite `app/referral-code/page.tsx` — 500+ word content
+- [-] 13. Rewrite `app/referral-code/page.tsx` — 500+ word content
   - Set H1 to: `GoPlay 11 Referral Code 2026 — Earn With Every Invite`
   - Set metadata title to: `GoPlay 11 Referral Code 2026 — Refer & Earn on GoPlay11`
   - Set metadata description per Req 10.5; set keywords per Req 11.2
@@ -145,7 +145,7 @@ Implement a comprehensive SEO overhaul for goplay11-apk.com across three layers:
   - Add FAQ section with 5+ questions; render `buildFaqSchema` and `buildBreadcrumbSchema` JSON-LD
   - _Requirements: 7.1, 7.2, 7.3, 10.5, 11.2, 17.5, 17.6, 17.7, 17.11, 22.1, 22.7_
 
-- [~] 14. Rewrite `app/how-to-play/page.tsx` — 600+ word content
+- [-] 14. Rewrite `app/how-to-play/page.tsx` — 600+ word content
   - Set H1 to: `How to Play GoPlay 11 Fantasy Cricket — Complete Beginner Guide`
   - Set metadata title to: `How to Play GoPlay 11 — Fantasy Cricket Guide for Beginners`
   - Set metadata description per Req 10.4; set keywords per Req 11.3
@@ -156,7 +156,7 @@ Implement a comprehensive SEO overhaul for goplay11-apk.com across three layers:
   - _Requirements: 7.1, 7.2, 7.3, 10.4, 11.3, 17.8, 17.9, 17.10, 17.11, 22.3, 22.5, 22.7_
 
 
-- [~] 15. Rewrite `app/about/page.tsx` — E-E-A-T content with @graph JSON-LD
+- [-] 15. Rewrite `app/about/page.tsx` — E-E-A-T content with @graph JSON-LD
   - Set metadata title to: `About GoPlay11 APK — Official GoPlay 11 Resource Site`
   - Set metadata description per Req 10.8; set `canonicalPath: "/about"` per Req 14.3
   - Include: mission statement, named author bios (Rohan Mehta, Ananya Kulkarni from `EXPERT_TEAM`), editorial standards, content update process, responsible gaming commitment, contact info, links to `/editorial-policy` and `/responsible-play`
@@ -164,21 +164,21 @@ Implement a comprehensive SEO overhaul for goplay11-apk.com across three layers:
   - Verify `/about` is in `NAV_LINKS` (already present — no change needed)
   - _Requirements: 14.1, 14.2, 14.3, 14.4, 14.5, 14.6_
 
-- [~] 16. Rewrite `app/goplay11-app-download/page.tsx` — app features and overview (no install steps)
+- [-] 16. Rewrite `app/goplay11-app-download/page.tsx` — app features and overview (no install steps)
   - Focus content on app features and overview, targeting keyword `goplay 11 app`
   - No duplication of step-by-step install guide from `/download`
   - Link to `/download` as the primary download action using canonical anchor text
   - Add `buildBreadcrumbSchema` JSON-LD; add FAQ section with `buildFaqSchema` if applicable
   - _Requirements: 12.1, 12.2, 12.5, 7.1, 22.1_
 
-- [~] 17. Rewrite `app/goplay11-fantasy-app/page.tsx` — fantasy cricket platform overview (no install steps)
+- [-] 17. Rewrite `app/goplay11-fantasy-app/page.tsx` — fantasy cricket platform overview (no install steps)
   - Focus content on fantasy cricket platform overview, targeting keyword `goplay 11 fantasy app`
   - No duplication of install steps from `/download`
   - Link to `/download` as the primary download action using canonical anchor text
   - Add `buildBreadcrumbSchema` JSON-LD; add FAQ section with `buildFaqSchema` if applicable
   - _Requirements: 12.1, 12.3, 12.5, 7.1, 22.1_
 
-- [~] 18. Rewrite `app/apk/page.tsx` — APK technical details and version info (no install steps)
+- [-] 18. Rewrite `app/apk/page.tsx` — APK technical details and version info (no install steps)
   - Focus content on APK technical details and version information, targeting keyword `goplay11 apk`
   - No duplication of install steps from `/download`
   - Link to `/download` as the primary download action using canonical anchor text
@@ -186,7 +186,7 @@ Implement a comprehensive SEO overhaul for goplay11-apk.com across three layers:
   - _Requirements: 12.1, 12.4, 12.5, 7.1, 22.1_
 
 
-- [~] 19. Update `components/site-footer.tsx` — "Our Platforms" nav section
+- [-] 19. Update `components/site-footer.tsx` — "Our Platforms" nav section
   - Replace the "Recommended Platform" section with a `<nav aria-label="Our platforms">` element
   - Import `PLATFORM_LINKS` from `@/lib/site` and render each entry as an `<a>` with `rel={EXTERNAL_REL}` and `target="_blank"`
   - Remove the `RECOMMENDED_PLATFORM_URL` and `GOOGLE_BUSINESS_PROFILE_URL` references from the replaced section

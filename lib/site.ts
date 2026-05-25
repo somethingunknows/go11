@@ -1,5 +1,26 @@
 export const SITE_NAME = "GoPlay11 APK";
-export const SITE_URL = "https://goplay11-apk.com";
+
+const DEFAULT_SITE_URL = "https://gopay11apk.com";
+
+function normalizeSiteUrl(value: string): string {
+  return value.endsWith("/") ? value.slice(0, -1) : value;
+}
+
+function resolveSiteUrl(): string {
+  const configured = process.env.NEXT_PUBLIC_SITE_URL?.trim();
+  if (!configured) {
+    return DEFAULT_SITE_URL;
+  }
+
+  const withProtocol =
+    configured.startsWith("http://") || configured.startsWith("https://")
+      ? configured
+      : `https://${configured}`;
+
+  return normalizeSiteUrl(withProtocol);
+}
+
+export const SITE_URL = resolveSiteUrl();
 export const LOGO_PATH = "/go11.png";
 export const SOCIAL_PREVIEW_PATH = "/goplay11-social.jpg";
 
@@ -29,7 +50,7 @@ export const DEFAULT_DESCRIPTION =
 
 export const BUSINESS_NAME = "GO11 Fantasy Media";
 export const SUPPORT_PHONE = "+91-80456-77881";
-export const SUPPORT_EMAIL = "support@goplay11-apk.com";
+export const SUPPORT_EMAIL = "support@gopay11apk.com";
 export const CONTENT_LAST_REVIEWED = "2026-04-08";
 export const BUSINESS_ADDRESS = {
   streetAddress: "44 Residency Road",

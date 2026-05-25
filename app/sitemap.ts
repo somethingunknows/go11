@@ -11,6 +11,7 @@ const CORE_ROUTES = [
   { path: "/blog", changeFrequency: "weekly" as const, priority: 0.85 },
   { path: "/goplay11-app-download", changeFrequency: "weekly" as const, priority: 0.85 },
   { path: "/goplay11-fantasy-app", changeFrequency: "weekly" as const, priority: 0.8 },
+  { path: "/habet-app-download", changeFrequency: "weekly" as const, priority: 0.65 },
   { path: "/how-to-play", changeFrequency: "weekly" as const, priority: 0.8 },
   { path: "/referral-code", changeFrequency: "weekly" as const, priority: 0.75 },
   { path: "/login-register", changeFrequency: "weekly" as const, priority: 0.75 },

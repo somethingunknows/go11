@@ -17,7 +17,7 @@ export type BlogPost = {
   keywords: string[];
   sections: BlogSection[];
   faq?: FaqItem[];
-  category: "goplay11" | "habet";
+  category?: "goplay11" | "habet";
   ogTitle?: string;
   seoTitle?: string;
 };
@@ -414,6 +414,7 @@ export const BLOG_POSTS: BlogPost[] = [
     updatedAt: "2026-04-29",
     author: "Ananya Kulkarni",
     reviewer: "Rohan Mehta",
+    category: "habet",
     keywords: [
       "is habet app real",
       "is habet app safe",

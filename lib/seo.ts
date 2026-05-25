@@ -18,6 +18,7 @@ import {
   SUPPORT_PHONE,
   type FaqItem,
 } from "@/lib/site";
+import type { BlogPost } from "@/lib/blog";
 
 type MetadataOptions = {
   title?: string;
@@ -142,6 +143,10 @@ export function buildMetadata(options: MetadataOptions = {}): Metadata {
     },
   };
 }
+
+// ---------------------------------------------------------------------------
+// Public standalone schema builders (backward-compatible)
+// ---------------------------------------------------------------------------
 
 export function buildBreadcrumbSchema(items: BreadcrumbItem[]) {
   return {
@@ -286,5 +291,200 @@ export function buildWebsiteSchema() {
       target: `${SITE_URL}/blog?query={search_term_string}`,
       "query-input": "required name=search_term_string",
     },
+  };
+}
+
+// ---------------------------------------------------------------------------
+// Private node builders — shared by @graph composite helpers
+// ---------------------------------------------------------------------------
+
+function buildOrganizationNode() {
+  return {
+    "@type": "Organization",
+    "@id": ORGANIZATION_ID,
+    name: SITE_NAME,
+    legalName: BUSINESS_NAME,
+    url: SITE_URL,
+    logo: {
+      "@type": "ImageObject",
+      url: `${SITE_URL}${LOGO_PATH}`,
+    },
+    sameAs: SOCIAL_PROFILE_LINKS,
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        telephone: SUPPORT_PHONE,
+        contactType: "customer support",
+        email: SUPPORT_EMAIL,
+        areaServed: "IN",
+        availableLanguage: ["en", "hi"],
+      },
+    ],
+  };
+}
+
+function buildBreadcrumbNode(items: BreadcrumbItem[]) {
+  return {
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: absoluteUrl(item.path),
+    })),
+  };
+}
+
+function buildFaqNode(items: FaqItem[]) {
+  return {
+    "@type": "FAQPage",
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+}
+
+function buildSoftwareApplicationNode() {
+  return {
+    "@type": "SoftwareApplication",
+    name: "GoPlay 11",
+    alternateName: [
+      "GoPlay11",
+      "Go Play 11",
+      "GoPlay 11 App",
+      "GoPlay11 APK",
+      "GoPlay 11 Fantasy App",
+    ],
+    operatingSystem: "Android",
+    applicationCategory: "SportsApplication",
+    downloadUrl: `${SITE_URL}/download`,
+    image: `${SITE_URL}${LOGO_PATH}`,
+    publisher: {
+      "@id": ORGANIZATION_ID,
+    },
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "INR",
+      availability: "https://schema.org/InStock",
+    },
+  };
+}
+
+function buildWebsiteNode() {
+  return {
+    "@type": "WebSite",
+    "@id": WEBSITE_ID,
+    name: SITE_NAME,
+    url: SITE_URL,
+    inLanguage: ["en-IN", "en-US"],
+    publisher: {
+      "@id": ORGANIZATION_ID,
+    },
+    potentialAction: {
+      "@type": "SearchAction",
+      target: `${SITE_URL}/blog?q={search_term_string}`,
+      "query-input": "required name=search_term_string",
+    },
+  };
+}
+
+function buildArticleNode(options: { post: BlogPost; path: string }) {
+  const { post, path } = options;
+  return {
+    "@type": "Article",
+    headline: post.title,
+    description: post.description,
+    url: absoluteUrl(path),
+    mainEntityOfPage: absoluteUrl(path),
+    inLanguage: "en-IN",
+    datePublished: post.publishedAt,
+    dateModified: post.updatedAt,
+    author: {
+      "@type": "Person",
+      name: post.author ?? "GoPlay11 Editorial Team",
+      url: `${SITE_URL}/about`,
+    },
+    publisher: {
+      "@id": ORGANIZATION_ID,
+    },
+    image: {
+      "@type": "ImageObject",
+      url: absoluteUrl(SOCIAL_PREVIEW_PATH),
+      width: 1200,
+      height: 630,
+    },
+  };
+}
+
+// ---------------------------------------------------------------------------
+// Public @graph composite schema builders
+// ---------------------------------------------------------------------------
+
+/**
+ * Returns a single @graph JSON-LD object for the homepage containing
+ * SoftwareApplication, WebSite, Organization, and FAQPage nodes.
+ * Satisfies Requirements 5.1–5.5.
+ */
+export function buildHomepageGraphSchema(faqs: FaqItem[]): object {
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      buildSoftwareApplicationNode(),
+      buildWebsiteNode(),
+      buildOrganizationNode(),
+      buildFaqNode(faqs),
+    ],
+  };
+}
+
+/**
+ * Returns a single @graph JSON-LD object for blog post pages containing
+ * Article, BreadcrumbList, and (when faq is non-empty) FAQPage nodes.
+ * Satisfies Requirements 6.1–6.4.
+ */
+export function buildBlogPostGraphSchema(options: {
+  post: BlogPost;
+  path: string;
+}): object {
+  const nodes: object[] = [
+    buildArticleNode(options),
+    buildBreadcrumbNode([
+      { name: "Home", path: "/" },
+      { name: "Blog", path: "/blog" },
+      { name: options.post.title, path: options.path },
+    ]),
+  ];
+
+  if (options.post.faq && options.post.faq.length > 0) {
+    nodes.push(buildFaqNode(options.post.faq));
+  }
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": nodes,
+  };
+}
+
+/**
+ * Returns a single @graph JSON-LD object for the /about page containing
+ * Organization and BreadcrumbList nodes.
+ * Satisfies Requirements 14.5, 14.6.
+ */
+export function buildAboutPageGraphSchema(): object {
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      buildOrganizationNode(),
+      buildBreadcrumbNode([
+        { name: "Home", path: "/" },
+        { name: "About", path: "/about" },
+      ]),
+    ],
   };
 }
