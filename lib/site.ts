@@ -21,7 +21,7 @@ function resolveSiteUrl(): string {
 }
 
 export const SITE_URL = resolveSiteUrl();
-export const LOGO_PATH = "/go11.webp";
+export const LOGO_PATH = "/go11.png";
 export const SOCIAL_PREVIEW_PATH = "/social-preview.webp";
 
 export const AFFILIATE_LINK =

@@ -31,27 +31,27 @@ const EXPERIENCE_STEPS = [
   {
     title: "Login To Your Account",
     subtitle: "Access your dashboard and start playing",
-    image: "/goplay11-1.webp",
+    image: "/goplay11-1.jpeg",
   },
   {
     title: "Join Contests",
     subtitle: "Compete with thousands of players",
-    image: "/goplay11-2.webp",
+    image: "/goplay11-2.jpeg",
   },
   {
     title: "Create Your Team",
     subtitle: "Build your best XI for every match",
-    image: "/goplay11-3.webp",
+    image: "/goplay11-3.jpeg",
   },
   {
     title: "Track Live Scores",
     subtitle: "Follow every point in real time",
-    image: "/goplay11-4.webp",
+    image: "/goplay11-4.jpeg",
   },
   {
     title: "Win Real Cash",
     subtitle: "Withdraw winnings quickly and securely",
-    image: "/goplay11-5.webp",
+    image: "/goplay11-5.jpeg",
   },
 ];
 
@@ -199,7 +199,7 @@ export function Pick11HomePage({
               decoding="async"
               fetchPriority="high"
               height="150"
-              src="/go11.webp"
+              src="/go11.png"
               width="150"
             />
             <h1 className="pick11-hero-title">
@@ -291,35 +291,35 @@ export function Pick11HomePage({
                 className="pick11-about-main-img"
                 decoding="async"
                 loading="lazy"
-                src="/goplay11-1.webp"
+                src="/goplay11-1.jpeg"
               />
               <img
                 alt="GoPay 11 contest lobby"
                 className="pick11-flying-icon pick11-fly-1"
                 decoding="async"
                 loading="lazy"
-                src="/goplay11-2.webp"
+                src="/goplay11-2.jpeg"
               />
               <img
                 alt="GoPay 11 team selection"
                 className="pick11-flying-icon pick11-fly-2"
                 decoding="async"
                 loading="lazy"
-                src="/goplay11-3.webp"
+                src="/goplay11-3.jpeg"
               />
               <img
                 alt="GoPay 11 live score tracking"
                 className="pick11-flying-icon pick11-fly-3"
                 decoding="async"
                 loading="lazy"
-                src="/goplay11-4.webp"
+                src="/goplay11-4.jpeg"
               />
               <img
                 alt="GoPay 11 cash withdrawal"
                 className="pick11-flying-icon pick11-fly-4"
                 decoding="async"
                 loading="lazy"
-                src="/goplay11-5.webp"
+                src="/goplay11-5.jpeg"
               />
             </div>
           </div>
