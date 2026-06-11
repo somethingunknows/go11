@@ -7,7 +7,8 @@ const STATIC_LAST_MODIFIED = new Date();
 
 const CORE_ROUTES = [
   { path: "/", changeFrequency: "daily" as const, priority: 1.0 },
-  { path: "/download", changeFrequency: "daily" as const, priority: 0.95 },
+  { path: "/download", changeFrequency: "daily" as const, priority: 0.9 },
+  { path: "/gopay-11", changeFrequency: "weekly" as const, priority: 0.9 },
   { path: "/blog", changeFrequency: "weekly" as const, priority: 0.85 },
   { path: "/goplay11-app-download", changeFrequency: "weekly" as const, priority: 0.85 },
   { path: "/goplay11-fantasy-app", changeFrequency: "weekly" as const, priority: 0.8 },
@@ -15,7 +16,7 @@ const CORE_ROUTES = [
   { path: "/how-to-play", changeFrequency: "weekly" as const, priority: 0.8 },
   { path: "/referral-code", changeFrequency: "weekly" as const, priority: 0.75 },
   { path: "/login-register", changeFrequency: "weekly" as const, priority: 0.75 },
-  { path: "/apk", changeFrequency: "weekly" as const, priority: 0.75 },
+  { path: "/apk", changeFrequency: "weekly" as const, priority: 0.8 },
   { path: "/about", changeFrequency: "monthly" as const, priority: 0.5 },
   { path: "/responsible-play", changeFrequency: "monthly" as const, priority: 0.5 },
   { path: "/editorial-policy", changeFrequency: "monthly" as const, priority: 0.5 },

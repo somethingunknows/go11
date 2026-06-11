@@ -11,9 +11,9 @@ import {
 } from "@/lib/seo";
 import { CONTENT_LAST_REVIEWED } from "@/lib/site";
 
-const PAGE_TITLE = "Goplay11 APK - Fast Android Install and Latest Version Guide";
+const PAGE_TITLE = "GoPay 11 APK - Fast Android Install and Latest Version Guide";
 const PAGE_DESCRIPTION =
-  "Get the latest Goplay11 APK package, review install compatibility, and complete setup in minutes for fantasy cricket and football contests.";
+  "Get the latest GoPay 11 APK package, review install compatibility, and complete setup in minutes for fantasy cricket and football contests.";
 
 const APK_HIGHLIGHTS = [
   "Small file size for faster downloads",
@@ -34,11 +34,12 @@ export const metadata = buildMetadata({
   description: PAGE_DESCRIPTION,
   path: "/apk",
   keywords: [
+    "gopay 11 apk",
+    "gopay 11 apk download",
+    "gopay 11 download",
     "goplay11 apk",
     "download goplay11 apk latest version 2026",
-    "gopay 11 apk",
     "gopay11 apk",
-    "gopay 11 apk download",
   ],
 });
 
@@ -72,8 +73,8 @@ export default function ApkPage() {
         <div className="container card">
           <h2>Why users search for Goplay11 APK</h2>
           <p>
-            Most users prefer APK-based installation for direct setup speed. This page
-            is focused on practical steps and clean source verification.
+            Most users search for GoPay 11 APK because they want direct setup speed.
+            This page is focused on practical steps and clean source verification.
           </p>
           <ul className="tick-list">
             {APK_HIGHLIGHTS.map((item) => (
@@ -109,7 +110,7 @@ export default function ApkPage() {
             <p>
               For a direct installation path, use{" "}
               <Link className="text-link" href="/download">
-                Download Goplay11 APK
+                Download GoPay 11 APK
               </Link>
               .
             </p>

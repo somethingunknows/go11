@@ -132,11 +132,11 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             <p>
               Ready to apply this strategy? Go to{" "}
               <Link className="text-link" href="/download">
-                Download Goplay11 APK
+                Download GoPay 11 APK
               </Link>{" "}
               and then use the{" "}
               <Link className="text-link" href="/how-to-play">
-                Play fantasy games online
+                How to play GoPay 11
               </Link>{" "}
               guide.
             </p>

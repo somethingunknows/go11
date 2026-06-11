@@ -29,7 +29,9 @@ type MetadataOptions = {
   openGraphType?: "website" | "article";
   noIndex?: boolean;
   ogTitle?: string;
+  ogDescription?: string;
   twitterTitle?: string;
+  twitterDescription?: string;
 };
 
 type BreadcrumbItem = {
@@ -98,7 +100,9 @@ export function buildMetadata(options: MetadataOptions = {}): Metadata {
   );
   const canonicalUrl = absoluteUrl(options.canonicalPath ?? options.path ?? "/");
   const shouldIndex = !(options.noIndex ?? false);
-  const keywords = Array.from(new Set([...(options.keywords ?? []), ...ALL_KEYWORDS]));
+  const keywords = Array.from(new Set(options.keywords ?? ALL_KEYWORDS));
+  const openGraphDescription = options.ogDescription ?? description;
+  const twitterDescription = options.twitterDescription ?? description;
 
   return {
     title,
@@ -112,7 +116,7 @@ export function buildMetadata(options: MetadataOptions = {}): Metadata {
       type: options.openGraphType ?? "website",
       url: canonicalUrl,
       title: options.ogTitle ?? title,
-      description,
+      description: openGraphDescription,
       siteName: SITE_NAME,
       locale: "en_IN",
       images: [
@@ -127,7 +131,7 @@ export function buildMetadata(options: MetadataOptions = {}): Metadata {
     twitter: {
       card: "summary_large_image",
       title: options.twitterTitle ?? title,
-      description,
+      description: twitterDescription,
       images: [`${SITE_URL}${SOCIAL_PREVIEW_PATH}`],
     },
     robots: {
@@ -180,12 +184,12 @@ export function buildSoftwareApplicationSchema(description: string, path: string
   return {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    name: "GoPlay11 (Go Play 11) Fantasy App",
-    alternateName: ["Go Play 11", "Go Play 11 APK", "GoPlay11 APK"],
-    applicationCategory: "GameApplication",
+    name: "GoPay 11",
+    alternateName: ["GoPlay11 APK", "GoPay 11 APK", "Go Play 11"],
     operatingSystem: "Android",
-    description,
+    applicationCategory: "GameApplication",
     url: absoluteUrl(path),
+    description,
     downloadUrl: AFFILIATE_LINK,
     image: `${SITE_URL}${LOGO_PATH}`,
     publisher: {
@@ -280,15 +284,19 @@ export function buildWebsiteSchema() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "@id": WEBSITE_ID,
-    name: SITE_NAME,
+    name: "GoPay 11 APK",
+    alternateName: ["GoPlay11", "GoPay11", "Go Pay 11"],
     url: SITE_URL,
-    inLanguage: ["en-IN", "en-US"],
+    description: "GoPay 11 APK download and GoPlay11 fantasy cricket resource hub.",
     publisher: {
       "@id": ORGANIZATION_ID,
     },
     potentialAction: {
       "@type": "SearchAction",
-      target: `${SITE_URL}/blog?query={search_term_string}`,
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${SITE_URL}/?s={search_term_string}`,
+      },
       "query-input": "required name=search_term_string",
     },
   };
@@ -352,16 +360,13 @@ function buildFaqNode(items: FaqItem[]) {
 function buildSoftwareApplicationNode() {
   return {
     "@type": "SoftwareApplication",
-    name: "GoPlay 11",
-    alternateName: [
-      "GoPlay11",
-      "Go Play 11",
-      "GoPlay 11 App",
-      "GoPlay11 APK",
-      "GoPlay 11 Fantasy App",
-    ],
+    name: "GoPay 11",
+    alternateName: ["GoPlay11 APK", "GoPay 11 APK", "Go Play 11"],
     operatingSystem: "Android",
-    applicationCategory: "SportsApplication",
+    applicationCategory: "GameApplication",
+    url: `${SITE_URL}/download`,
+    description:
+      "GoPay 11 is a fantasy cricket app where users build teams, join contests, and win real cash across IPL, T20, and ODI matches.",
     downloadUrl: `${SITE_URL}/download`,
     image: `${SITE_URL}${LOGO_PATH}`,
     publisher: {
@@ -380,15 +385,19 @@ function buildWebsiteNode() {
   return {
     "@type": "WebSite",
     "@id": WEBSITE_ID,
-    name: SITE_NAME,
+    name: "GoPay 11 APK",
+    alternateName: ["GoPlay11", "GoPay11", "Go Pay 11"],
     url: SITE_URL,
-    inLanguage: ["en-IN", "en-US"],
+    description: "GoPay 11 APK download and GoPlay11 fantasy cricket resource hub.",
     publisher: {
       "@id": ORGANIZATION_ID,
     },
     potentialAction: {
       "@type": "SearchAction",
-      target: `${SITE_URL}/blog?q={search_term_string}`,
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${SITE_URL}/?s={search_term_string}`,
+      },
       "query-input": "required name=search_term_string",
     },
   };

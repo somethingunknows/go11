@@ -8,6 +8,7 @@ import {
   AFFILIATE_REL,
   CONTENT_LAST_REVIEWED,
   EXTERNAL_REL,
+  GOPAY_11_FAQS,
   SOCIAL_PROFILES,
 } from "@/lib/site";
 
@@ -30,27 +31,27 @@ const EXPERIENCE_STEPS = [
   {
     title: "Login To Your Account",
     subtitle: "Access your dashboard and start playing",
-    image: "/goplay11-1.jpeg",
+    image: "/goplay11-1.webp",
   },
   {
     title: "Join Contests",
     subtitle: "Compete with thousands of players",
-    image: "/goplay11-2.jpeg",
+    image: "/goplay11-2.webp",
   },
   {
     title: "Create Your Team",
     subtitle: "Build your best XI for every match",
-    image: "/goplay11-3.jpeg",
+    image: "/goplay11-3.webp",
   },
   {
     title: "Track Live Scores",
     subtitle: "Follow every point in real time",
-    image: "/goplay11-4.jpeg",
+    image: "/goplay11-4.webp",
   },
   {
     title: "Win Real Cash",
     subtitle: "Withdraw winnings quickly and securely",
-    image: "/goplay11-5.jpeg",
+    image: "/goplay11-5.webp",
   },
 ];
 
@@ -118,6 +119,7 @@ const FAQ_ITEMS = [
     answer:
       "Yes, free contests are available, and paid contests are optional for cash prizes.",
   },
+  ...GOPAY_11_FAQS,
 ];
 
 const TRUST_FACTS = [
@@ -191,14 +193,25 @@ export function Pick11HomePage({
       <section className="pick11-home-section" id="home">
         <div className="pick11-home-wrapper">
           <div className="pick11-hero-static">
-            <img alt="GoPlay11 logo" className="pick11-hero-logo" src="/go11.png" />
-            <h1 className="pick11-hero-title">GoPlay11</h1>
+            <img
+              alt="GoPay 11 APK — GoPlay11 logo"
+              className="pick11-hero-logo"
+              decoding="async"
+              fetchPriority="high"
+              height="150"
+              src="/go11.webp"
+              width="150"
+            />
+            <h1 className="pick11-hero-title">
+              GoPay 11 — Download APK & Play Fantasy Cricket
+            </h1>
             <p className="pick11-hero-desc">
               Create your dream team, join contests, and win daily with GoPlay11.
             </p>
             <p className="pick11-hero-search-terms">
-              Looking for Go Play 11, Go Play 11 APK, or Goplay11 app download? You are
-              in the right place.
+              Looking for GoPay 11, GoPay 11 APK, or GoPay 11 app download? You are in
+              the right place. Download the GoPay 11 APK free and start winning real cash
+              today.
             </p>
             <div className="pick11-hero-chip-row">
               {HERO_HIGHLIGHTS.map((highlight) => (
@@ -213,8 +226,33 @@ export function Pick11HomePage({
               rel={AFFILIATE_REL}
               target="_blank"
             >
-              Download App
+              Download GoPay 11 APK
               <span aria-hidden="true">{"->"}</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="pick11-gopay-section" id="gopay-11">
+        <div className="pick11-section-container">
+          <h2>What Is GoPay 11?</h2>
+          <p>
+            GoPay 11 is a popular search name for the GoPlay11 fantasy cricket app.
+            Players searching for GoPay 11 APK, GoPay 11 download, or GoPay 11 app are
+            looking for the same trusted platform — GoPlay11. This app lets you build
+            your dream XI, join skill-based contests, and win real cash across top
+            cricket leagues like IPL, T20 World Cup, and more.
+          </p>
+          <p>
+            Whether you call it GoPay 11 or GoPlay11, the experience is the same: fast
+            withdrawals, live match tracking, and 100% real players.
+          </p>
+          <div className="pick11-gopay-link-row">
+            <a className="pick11-hero-btn" href="/download">
+              Download GoPay 11 APK <span aria-hidden="true">{"->"}</span>
+            </a>
+            <a className="pick11-gopay-text-link" href="/gopay-11">
+              Learn more about GoPay 11 <span aria-hidden="true">{"->"}</span>
             </a>
           </div>
         </div>
@@ -249,39 +287,39 @@ export function Pick11HomePage({
 
             <div className="pick11-about-visual">
               <img
-                alt="GoPlay11 gameplay"
+                alt="GoPay 11 gameplay interface"
                 className="pick11-about-main-img"
                 decoding="async"
                 loading="lazy"
-                src="/goplay11-1.jpeg"
+                src="/goplay11-1.webp"
               />
               <img
-                alt="GoPlay11 contests"
+                alt="GoPay 11 contest lobby"
                 className="pick11-flying-icon pick11-fly-1"
                 decoding="async"
                 loading="lazy"
-                src="/goplay11-2.jpeg"
+                src="/goplay11-2.webp"
               />
               <img
-                alt="GoPlay11 team builder"
+                alt="GoPay 11 team selection"
                 className="pick11-flying-icon pick11-fly-2"
                 decoding="async"
                 loading="lazy"
-                src="/goplay11-3.jpeg"
+                src="/goplay11-3.webp"
               />
               <img
-                alt="GoPlay11 live tracking"
+                alt="GoPay 11 live score tracking"
                 className="pick11-flying-icon pick11-fly-3"
                 decoding="async"
                 loading="lazy"
-                src="/goplay11-4.jpeg"
+                src="/goplay11-4.webp"
               />
               <img
-                alt="GoPlay11 payouts"
+                alt="GoPay 11 cash withdrawal"
                 className="pick11-flying-icon pick11-fly-4"
                 decoding="async"
                 loading="lazy"
-                src="/goplay11-5.jpeg"
+                src="/goplay11-5.webp"
               />
             </div>
           </div>
@@ -373,16 +411,33 @@ export function Pick11HomePage({
         </div>
       </div>
 
-      <section className="pick11-faq-section" id="faq">
+      <section
+        className="pick11-faq-section"
+        id="faq"
+        itemScope
+        itemType="https://schema.org/FAQPage"
+      >
         <div className="pick11-section-container pick11-faq-wrap">
           <h2>
             Frequently Asked <span>Questions</span>
           </h2>
           <div className="pick11-faq-grid">
             {FAQ_ITEMS.map((item) => (
-              <article className="pick11-faq-card" key={item.question}>
-                <h3>{item.question}</h3>
-                <p>{item.answer}</p>
+              <article
+                className="pick11-faq-card"
+                itemProp="mainEntity"
+                itemScope
+                itemType="https://schema.org/Question"
+                key={item.question}
+              >
+                <h3 itemProp="name">{item.question}</h3>
+                <div
+                  itemProp="acceptedAnswer"
+                  itemScope
+                  itemType="https://schema.org/Answer"
+                >
+                  <p itemProp="text">{item.answer}</p>
+                </div>
               </article>
             ))}
           </div>

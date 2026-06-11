@@ -21,8 +21,8 @@ function resolveSiteUrl(): string {
 }
 
 export const SITE_URL = resolveSiteUrl();
-export const LOGO_PATH = "/go11.png";
-export const SOCIAL_PREVIEW_PATH = "/goplay11-social.jpg";
+export const LOGO_PATH = "/go11.webp";
+export const SOCIAL_PREVIEW_PATH = "/social-preview.webp";
 
 export const AFFILIATE_LINK =
   "https://web-in.goplaycom.com/en/affiliate-invited?c=6FHW28S2&s=3";
@@ -38,10 +38,10 @@ export const PLATFORM_LINKS = [
 ] as const;
 
 export const ANCHOR = {
-  download:  "Download GoPlay 11 APK",
-  referral:  "GoPlay 11 referral code",
-  howToPlay: "how to play GoPlay 11",
-  loginReg:  "GoPlay 11 login and register",
+  download: "Download GoPay 11 APK",
+  referral: "GoPay 11 referral code",
+  howToPlay: "How to play GoPay 11",
+  loginReg: "GoPay 11 login",
 } as const;
 
 export const DEFAULT_TITLE = "Go Play 11 APK Download and GoPlay11 Fantasy Guide";
@@ -73,36 +73,36 @@ export const SOCIAL_PROFILES = {
 export const SOCIAL_PROFILE_LINKS = Object.values(SOCIAL_PROFILES);
 
 export const PRIMARY_KEYWORDS = [
+  "gopay 11",
+  "gopay 11 apk",
+  "gopay 11 download",
+  "gopay 11 apk download",
+  "gopay 11 app",
+  "gopay11",
+  "gopay 11 app download",
   "go play 11",
-  "go play 11 apk",
-  "go play 11 apk download",
   "goplay11",
-  "goplay11 app download",
   "goplay11 apk",
+  "goplay11 apk download",
+  "goplay11 app",
   "goplay11 fantasy app",
+  "goplay11 login",
+  "goplay11 referral code",
 ];
 
 export const SECONDARY_KEYWORDS = [
+  "go play 11 apk",
+  "go play 11 apk download",
   "go play11",
   "goplay 11",
   "go play11 apk",
   "goplay 11 apk",
-  "goplay11 apk download",
   "go play11 apk download",
   "goplay 11 apk download",
-  "goplay11 login",
   "goplay11 register",
-  "goplay11 referral code",
   "goplay11 app latest version",
   "goplay11 games",
-  // misspelling variants users are actively searching
-  "gopay 11",
-  "gopay11",
-  "gopay 11 apk",
   "gopay11 apk",
-  "gopay 11 download",
-  "gopay 11 apk download",
-  "gopay 11 app download",
 ];
 
 export const LONG_TAIL_KEYWORDS = [
@@ -119,7 +119,8 @@ export const LONG_TAIL_KEYWORDS = [
 export const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "/download", label: "Download" },
+  { href: "/download", label: "Download GoPay 11 APK" },
+  { href: "/gopay-11", label: "GoPay 11" },
   { href: "/goplay11-app-download", label: "App Download" },
   { href: "/goplay11-fantasy-app", label: "Fantasy App" },
   { href: "/apk", label: "APK" },
@@ -165,6 +166,29 @@ export type FaqItem = {
   question: string;
   answer: string;
 };
+
+export const GOPAY_11_FAQS: FaqItem[] = [
+  {
+    question: "What is GoPay 11?",
+    answer:
+      "GoPay 11 is a commonly used alternate name for the GoPlay11 fantasy cricket app. Users searching for GoPay 11 APK or GoPay 11 download are looking for GoPlay11 — a real-money fantasy sports platform available on Android.",
+  },
+  {
+    question: "How do I download GoPay 11 APK?",
+    answer:
+      "To download GoPay 11 APK, visit the official download page at gopay11apk.com/download and tap the Download APK button. Install the file on your Android device, register, and start playing fantasy contests instantly.",
+  },
+  {
+    question: "Is GoPay 11 safe?",
+    answer:
+      "Yes. GoPay 11 (GoPlay11) is a skill-based fantasy platform with secure deposits, verified withdrawals, and a no-bots policy. Always download from the official site to stay safe.",
+  },
+  {
+    question: "Is GoPay 11 the same as GoPlay11?",
+    answer:
+      "Yes. GoPay 11 and GoPlay11 refer to the same fantasy cricket application. The name GoPay 11 is commonly used by players when searching for the app online.",
+  },
+];
 
 export const HOME_FAQS: FaqItem[] = [
   {
@@ -214,6 +238,7 @@ export const HOME_FAQS: FaqItem[] = [
     answer:
       "GoPlay 11 is a real-money fantasy sports platform. Always download from the official site, review the app permissions it requests, and check the support and payout policies before adding funds. Start with free contests to get comfortable with the platform before depositing.",
   },
+  ...GOPAY_11_FAQS,
 ];
 
 export const REFERRAL_FAQS: FaqItem[] = [

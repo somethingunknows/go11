@@ -16,7 +16,8 @@ import {
 const QUICK_LINKS = [
   { href: "/about", label: "About GoPlay11 APK Resource Hub" },
   { href: "/editorial-policy", label: "Editorial Policy and Review Process" },
-  { href: "/download", label: "Download Goplay11 APK" },
+  { href: "/download", label: "Download GoPay 11 APK" },
+  { href: "/gopay-11", label: "GoPay 11 APK Guide" },
   { href: "/goplay11-app-download", label: "Goplay11 App Download Guide" },
   { href: "/goplay11-fantasy-app", label: "Goplay11 Fantasy App Guide" },
   { href: "/apk", label: "Goplay11 APK Guide" },
@@ -40,7 +41,7 @@ export function SiteFooter() {
       <div className="container footer-grid">
         <div>
           <div className="footer-brand">
-            <Image alt={`${SITE_NAME} logo`} className="footer-logo" height={48} src={LOGO_PATH} width={48} />
+            <Image alt="GoPay 11 APK — GoPlay11 logo" className="footer-logo" height={48} src={LOGO_PATH} width={48} />
             <p className="footer-title">{SITE_NAME}</p>
           </div>
           <p className="footer-copy">
@@ -98,6 +99,11 @@ export function SiteFooter() {
             Phone: <a href={`tel:${SUPPORT_PHONE}`}>{SUPPORT_PHONE}</a>
             <br />
             Email: <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>
+          </p>
+          <p className="footer-note">
+            Disclaimer: This is not the official website. We are an independent
+            informational resource and are not affiliated with the official
+            GoPlay11 platform.
           </p>
           <p className="footer-note">
             Play responsibly. Fantasy gaming involves risk and should be used by

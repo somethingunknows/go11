@@ -13,9 +13,10 @@ import {
 } from "@/lib/seo";
 import { CONTENT_LAST_REVIEWED } from "@/lib/site";
 
-const PAGE_TITLE = "Download Goplay11 APK Latest Version (2026)";
+const PAGE_TITLE = "GoPay 11 APK Download — Latest Version 2026 | GoPlay11";
+const H1_TITLE = "GoPay 11 APK — Download Latest Version 2026";
 const PAGE_DESCRIPTION =
-  "Download Goplay11 APK latest version 2026 with a fast install process, secure setup flow, and quick access to fantasy contests.";
+  "GoPay 11 APK (also known as GoPlay11) is now available for free download on Android. Follow the steps below to install GoPay 11 on your device and start playing fantasy cricket contests for real cash prizes.";
 
 const DOWNLOAD_FEATURES = [
   "Lightweight APK",
@@ -49,9 +50,11 @@ export const metadata = buildMetadata({
   description: PAGE_DESCRIPTION,
   path: "/download",
   keywords: [
+    "gopay 11",
+    "gopay 11 apk",
+    "gopay 11 download",
     "download goplay11 app",
     "goplay11 app latest version",
-    "gopay 11 download",
     "gopay11 download",
     "gopay 11 apk download",
   ],
@@ -71,7 +74,7 @@ export default function DownloadPage() {
 
       <PageHero
         eyebrow="Official Install Guide"
-        title={PAGE_TITLE}
+        title={H1_TITLE}
         description={PAGE_DESCRIPTION}
       >
         <BreadcrumbTrail
@@ -113,18 +116,18 @@ export default function DownloadPage() {
             <p>
               Continue with the{" "}
               <Link className="text-link" href="/apk">
-                Goplay11 APK setup walkthrough
+                GoPay 11 APK setup walkthrough
               </Link>{" "}
               and then complete account onboarding with the{" "}
               <Link className="text-link" href="/login-register">
-                login/register guide
+                GoPay 11 login guide
               </Link>
               .
             </p>
             <p>
               Want gameplay strategy after install? Use{" "}
               <Link className="text-link" href="/how-to-play">
-                Play fantasy games online
+                How to play GoPay 11
               </Link>{" "}
               to study lineup planning basics.
             </p>

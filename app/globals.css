@@ -1092,6 +1092,45 @@ body.home-template-active .site-main {
   padding: 5rem 0;
 }
 
+.pick11-gopay-section {
+  background: #050505;
+  padding: 4rem 0 5rem;
+}
+
+.pick11-gopay-section h2 {
+  font-family: "Segoe UI", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 900;
+  letter-spacing: 0.03em;
+  margin: 0 0 1rem;
+  text-transform: uppercase;
+}
+
+.pick11-gopay-section p {
+  color: #cbd5e1;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  margin: 0 0 1rem;
+  max-width: 58rem;
+}
+
+.pick11-gopay-link-row {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.4rem;
+}
+
+.pick11-gopay-text-link {
+  color: #facc15;
+  font-weight: 900;
+}
+
+.pick11-gopay-text-link:hover {
+  color: #fff;
+}
+
 .pick11-about-grid {
   align-items: center;
   display: grid;
@@ -1921,6 +1960,7 @@ body.home-template-active .site-main {
 }
 
 .pick11-home-section,
+.pick11-gopay-section,
 .pick11-about-section,
 .pick11-features-section,
 .pick11-faq-section {
