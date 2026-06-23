@@ -248,7 +248,12 @@ export function Pick11HomePage({
             withdrawals, live match tracking, and 100% real players.
           </p>
           <div className="pick11-gopay-link-row">
-            <a className="pick11-hero-btn" href="/download">
+            <a
+              className="pick11-hero-btn"
+              href={DOWNLOAD_URL}
+              rel={AFFILIATE_REL}
+              target="_blank"
+            >
               Download GoPlay11 APK <span aria-hidden="true">{"->"}</span>
             </a>
             <a className="pick11-gopay-text-link" href="/goplay-11">

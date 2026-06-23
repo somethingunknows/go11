@@ -25,7 +25,7 @@ export const LOGO_PATH = "/go11.png";
 export const SOCIAL_PREVIEW_PATH = "/social-preview.jpg";
 
 export const AFFILIATE_LINK =
-  "https://web-in.goplaycom.com/en/affiliate-invited?c=6FHW28S2&s=3";
+  "https://web-in.goplayspring.com/en/affiliate-invited?c=WWWXXZRLAY&s=1";
 export const RECOMMENDED_PLATFORM_URL = "https://www.comegameapp.com";
 export const AFFILIATE_REL = "nofollow sponsored noopener noreferrer";
 export const EXTERNAL_REL = "nofollow noopener noreferrer";
@@ -124,7 +124,7 @@ export const LONG_TAIL_KEYWORDS = [
 export const NAV_LINKS = [
   { href: "/goplay-11", label: "GoPlay11" },
   { href: "/about", label: "About" },
-  { href: "/download", label: "Download GoPlay11 APK" },
+  { href: AFFILIATE_LINK, label: "Download GoPlay11 APK" },
   { href: "/goplay11-app-download", label: "App Download" },
   { href: "/goplay11-fantasy-app", label: "Fantasy App" },
   { href: "/apk", label: "APK" },

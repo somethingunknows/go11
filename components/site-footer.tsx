@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import {
+  AFFILIATE_LINK,
   BUSINESS_ADDRESS,
   EXTERNAL_REL,
   GOOGLE_BUSINESS_PROFILE_URL,
@@ -16,7 +17,7 @@ import {
 const QUICK_LINKS = [
   { href: "/about", label: "About GoPlay11 APK Resource Hub" },
   { href: "/editorial-policy", label: "Editorial Policy and Review Process" },
-  { href: "/download", label: "Download GoPlay11 APK" },
+  { href: AFFILIATE_LINK, label: "Download GoPlay11 APK" },
   { href: "/goplay-11", label: "GoPlay11 APK Guide" },
   { href: "/goplay11-app-download", label: "Goplay11 App Download Guide" },
   { href: "/goplay11-fantasy-app", label: "Goplay11 Fantasy App Guide" },
