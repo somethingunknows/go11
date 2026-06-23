@@ -27,7 +27,7 @@ export default function AboutPage() {
       <JsonLd data={buildOrganizationSchema()} />
       <JsonLd
         data={buildBreadcrumbSchema([
-          { name: "Home", path: "/" },
+          { name: "Home", path: "/goplay-11" },
           { name: "About", path: "/about" },
         ])}
       />
@@ -35,7 +35,7 @@ export default function AboutPage() {
       <PageHero eyebrow="Who We Are" title={PAGE_TITLE} description={PAGE_DESCRIPTION}>
         <BreadcrumbTrail
           items={[
-            { label: "Home", href: "/" },
+            { label: "Home", href: "/goplay-11" },
             { label: "About" },
           ]}
         />

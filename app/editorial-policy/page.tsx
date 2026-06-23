@@ -39,7 +39,7 @@ export default function EditorialPolicyPage() {
     <>
       <JsonLd
         data={buildBreadcrumbSchema([
-          { name: "Home", path: "/" },
+          { name: "Home", path: "/goplay-11" },
           { name: "Editorial Policy", path: "/editorial-policy" },
         ])}
       />
@@ -51,7 +51,7 @@ export default function EditorialPolicyPage() {
       >
         <BreadcrumbTrail
           items={[
-            { label: "Home", href: "/" },
+            { label: "Home", href: "/goplay-11" },
             { label: "Editorial Policy" },
           ]}
         />

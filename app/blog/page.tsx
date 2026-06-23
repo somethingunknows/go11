@@ -31,7 +31,7 @@ export default function BlogIndexPage() {
     <>
       <JsonLd
         data={buildBreadcrumbSchema([
-          { name: "Home", path: "/" },
+          { name: "Home", path: "/goplay-11" },
           { name: "Blog", path: "/blog" },
         ])}
       />
@@ -43,7 +43,7 @@ export default function BlogIndexPage() {
       >
         <BreadcrumbTrail
           items={[
-            { label: "Home", href: "/" },
+            { label: "Home", href: "/goplay-11" },
             { label: "Blog" },
           ]}
         />

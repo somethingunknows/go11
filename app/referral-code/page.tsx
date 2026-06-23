@@ -26,8 +26,8 @@ export const metadata = buildMetadata({
     "goplay11 referral code",
     "goplay11 register",
     "goplay11 bonus",
-    "gopay 11 referral code",
-    "gopay11 referral code",
+    "goplay11 referral code",
+    "goplay11 referral code",
   ],
 });
 
@@ -36,7 +36,7 @@ export default function ReferralCodePage() {
     <>
       <JsonLd
         data={buildBreadcrumbSchema([
-          { name: "Home", path: "/" },
+          { name: "Home", path: "/goplay-11" },
           { name: "Referral Code", path: "/referral-code" },
         ])}
       />
@@ -49,7 +49,7 @@ export default function ReferralCodePage() {
       >
         <BreadcrumbTrail
           items={[
-            { label: "Home", href: "/" },
+            { label: "Home", href: "/goplay-11" },
             { label: "Referral Code" },
           ]}
         />

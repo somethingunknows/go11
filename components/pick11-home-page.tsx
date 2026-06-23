@@ -194,7 +194,7 @@ export function Pick11HomePage({
         <div className="pick11-home-wrapper">
           <div className="pick11-hero-static">
             <img
-              alt="GoPay 11 APK — GoPlay11 logo"
+              alt="GoPlay11 APK — GoPlay11 logo"
               className="pick11-hero-logo"
               decoding="async"
               fetchPriority="high"
@@ -203,14 +203,14 @@ export function Pick11HomePage({
               width="150"
             />
             <h1 className="pick11-hero-title">
-              GoPay 11 — Download APK & Play Fantasy Cricket
+              GoPlay 11 — Download APK & Play Fantasy Cricket
             </h1>
             <p className="pick11-hero-desc">
               Create your dream team, join contests, and win daily with GoPlay11.
             </p>
             <p className="pick11-hero-search-terms">
-              Looking for GoPay 11, GoPay 11 APK, or GoPay 11 app download? You are in
-              the right place. Download the GoPay 11 APK free and start winning real cash
+              Looking for GoPlay11, GoPlay 11 APK, or GoPlay11 app download? You are in
+              the right place. Download the GoPlay11 APK free and start winning real cash
               today.
             </p>
             <div className="pick11-hero-chip-row">
@@ -226,33 +226,33 @@ export function Pick11HomePage({
               rel={AFFILIATE_REL}
               target="_blank"
             >
-              Download GoPay 11 APK
+              Download GoPlay11 APK
               <span aria-hidden="true">{"->"}</span>
             </a>
           </div>
         </div>
       </section>
 
-      <section className="pick11-gopay-section" id="gopay-11">
+      <section className="pick11-gopay-section" id="goplay-11">
         <div className="pick11-section-container">
-          <h2>What Is GoPay 11?</h2>
+          <h2>What Is GoPlay 11?</h2>
           <p>
-            GoPay 11 is a popular search name for the GoPlay11 fantasy cricket app.
-            Players searching for GoPay 11 APK, GoPay 11 download, or GoPay 11 app are
-            looking for the same trusted platform — GoPlay11. This app lets you build
-            your dream XI, join skill-based contests, and win real cash across top
-            cricket leagues like IPL, T20 World Cup, and more.
+            GoPlay 11 is the main search phrase many users type when they want the
+            GoPlay11 fantasy cricket app. Players searching for GoPlay11 APK, GoPlay 11
+            download, or GoPlay11 app are looking for the same trusted platform. This
+            app lets you build your dream XI, join skill-based contests, and win real
+            cash across top cricket leagues like IPL, T20 World Cup, and more.
           </p>
           <p>
-            Whether you call it GoPay 11 or GoPlay11, the experience is the same: fast
+            Whether you type GoPlay11 or GoPlay 11, the experience is the same: fast
             withdrawals, live match tracking, and 100% real players.
           </p>
           <div className="pick11-gopay-link-row">
             <a className="pick11-hero-btn" href="/download">
-              Download GoPay 11 APK <span aria-hidden="true">{"->"}</span>
+              Download GoPlay11 APK <span aria-hidden="true">{"->"}</span>
             </a>
-            <a className="pick11-gopay-text-link" href="/gopay-11">
-              Learn more about GoPay 11 <span aria-hidden="true">{"->"}</span>
+            <a className="pick11-gopay-text-link" href="/goplay-11">
+              Learn more about GoPlay 11 <span aria-hidden="true">{"->"}</span>
             </a>
           </div>
         </div>
@@ -287,35 +287,35 @@ export function Pick11HomePage({
 
             <div className="pick11-about-visual">
               <img
-                alt="GoPay 11 gameplay interface"
+                alt="GoPlay11 gameplay interface"
                 className="pick11-about-main-img"
                 decoding="async"
                 loading="lazy"
                 src="/goplay11-1.jpeg"
               />
               <img
-                alt="GoPay 11 contest lobby"
+                alt="GoPlay11 contest lobby"
                 className="pick11-flying-icon pick11-fly-1"
                 decoding="async"
                 loading="lazy"
                 src="/goplay11-2.jpeg"
               />
               <img
-                alt="GoPay 11 team selection"
+                alt="GoPlay11 team selection"
                 className="pick11-flying-icon pick11-fly-2"
                 decoding="async"
                 loading="lazy"
                 src="/goplay11-3.jpeg"
               />
               <img
-                alt="GoPay 11 live score tracking"
+                alt="GoPlay11 live score tracking"
                 className="pick11-flying-icon pick11-fly-3"
                 decoding="async"
                 loading="lazy"
                 src="/goplay11-4.jpeg"
               />
               <img
-                alt="GoPay 11 cash withdrawal"
+                alt="GoPlay11 cash withdrawal"
                 className="pick11-flying-icon pick11-fly-4"
                 decoding="async"
                 loading="lazy"
@@ -331,8 +331,8 @@ export function Pick11HomePage({
         <div className="pick11-orb pick11-orb-right" aria-hidden="true" />
         <div className="pick11-section-container pick11-experience-shell">
           <header className="pick11-section-heading">
-            <h2>
-              EXPERIENCE <span>GOPLAY11</span>
+              <h2>
+              EXPERIENCE <span>GOPLAY 11</span>
             </h2>
             <p>Seamless gameplay, clean interface, and exciting features in one app.</p>
           </header>
@@ -386,7 +386,7 @@ export function Pick11HomePage({
       <section className="pick11-features-section" id="features">
         <div className="pick11-section-container">
           <h2 className="pick11-features-heading">
-            WHY CHOOSE <span>GOPLAY11?</span>
+            WHY CHOOSE <span>GOPLAY 11?</span>
           </h2>
           <div className="pick11-feature-grid">
             {FEATURE_CARDS.map((card) => (

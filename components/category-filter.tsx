@@ -56,7 +56,7 @@ export function CategoryFilter({ posts }: CategoryFilterProps) {
             </h2>
             <p>{post.excerpt}</p>
             <Link className="text-link" href={`/blog/${post.slug}`}>
-              {post.slug.startsWith("gopay-11") ? "Read GoPay 11 guide" : "Read article"}
+              {post.slug.startsWith("gopay-11") ? "Read GoPlay11 guide" : "Read article"}
             </Link>
           </article>
         ))}

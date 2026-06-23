@@ -16,8 +16,8 @@ import {
 const QUICK_LINKS = [
   { href: "/about", label: "About GoPlay11 APK Resource Hub" },
   { href: "/editorial-policy", label: "Editorial Policy and Review Process" },
-  { href: "/download", label: "Download GoPay 11 APK" },
-  { href: "/gopay-11", label: "GoPay 11 APK Guide" },
+  { href: "/download", label: "Download GoPlay11 APK" },
+  { href: "/goplay-11", label: "GoPlay11 APK Guide" },
   { href: "/goplay11-app-download", label: "Goplay11 App Download Guide" },
   { href: "/goplay11-fantasy-app", label: "Goplay11 Fantasy App Guide" },
   { href: "/apk", label: "Goplay11 APK Guide" },
@@ -41,7 +41,7 @@ export function SiteFooter() {
       <div className="container footer-grid">
         <div>
           <div className="footer-brand">
-            <Image alt="GoPay 11 APK — GoPlay11 logo" className="footer-logo" height={48} src={LOGO_PATH} width={48} />
+            <Image alt="GoPlay11 APK — GoPlay11 logo" className="footer-logo" height={48} src={LOGO_PATH} width={48} />
             <p className="footer-title">{SITE_NAME}</p>
           </div>
           <p className="footer-copy">

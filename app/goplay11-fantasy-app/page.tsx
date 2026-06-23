@@ -13,7 +13,7 @@ import {
 } from "@/lib/seo";
 import { CONTENT_LAST_REVIEWED } from "@/lib/site";
 
-const PAGE_TITLE = "Goplay11 Fantasy App - Play Smart and Win Big Online";
+const PAGE_TITLE = "GoPlay11 Fantasy App - Play Smart and Win Big Online";
 const PAGE_DESCRIPTION =
   "Use sports knowledge to build fantasy teams, join contests, and earn rewards with the Goplay11 fantasy app.";
 
@@ -122,9 +122,9 @@ export default function Goplay11FantasyAppPage() {
         data={buildSoftwareApplicationSchema(PAGE_DESCRIPTION, "/goplay11-fantasy-app")}
       />
       <JsonLd
-        data={buildBreadcrumbSchema([
-          { name: "Home", path: "/" },
-          { name: "Goplay11 Fantasy App", path: "/goplay11-fantasy-app" },
+      data={buildBreadcrumbSchema([
+          { name: "Home", path: "/goplay-11" },
+          { name: "GoPlay11 Fantasy App", path: "/goplay11-fantasy-app" },
         ])}
       />
       <JsonLd data={buildFaqSchema(PAGE_FAQS)} />
@@ -136,8 +136,8 @@ export default function Goplay11FantasyAppPage() {
       >
         <BreadcrumbTrail
           items={[
-            { label: "Home", href: "/" },
-            { label: "Goplay11 Fantasy App" },
+            { label: "Home", href: "/goplay-11" },
+            { label: "GoPlay11 Fantasy App" },
           ]}
         />
         <p className="lead-muted">Strategy page reviewed on {CONTENT_LAST_REVIEWED}</p>
@@ -147,7 +147,7 @@ export default function Goplay11FantasyAppPage() {
       <section className="section section-tight">
         <div className="container two-col">
           <article className="card">
-            <h2>Why Choose Goplay11 Fantasy App</h2>
+            <h2>Why Choose GoPlay11 Fantasy App</h2>
             <ul className="tick-list">
               {WHY_POINTS.map((item) => (
                 <li key={item}>{item}</li>
@@ -169,7 +169,7 @@ export default function Goplay11FantasyAppPage() {
       <section className="section section-tight">
         <div className="container two-col">
           <article className="card">
-            <h2>Goplay11 Download Steps</h2>
+            <h2>GoPlay11 Download Steps</h2>
             <ol className="step-list">
               {DOWNLOAD_STEPS.map((step) => (
                 <li key={step}>{step}</li>
@@ -178,7 +178,7 @@ export default function Goplay11FantasyAppPage() {
           </article>
 
           <article className="card">
-            <h2>Benefits of Using Goplay11</h2>
+            <h2>Benefits of Using GoPlay11</h2>
             <ul className="tick-list">
               {BENEFIT_POINTS.map((item) => (
                 <li key={item}>{item}</li>
@@ -200,7 +200,7 @@ export default function Goplay11FantasyAppPage() {
             <p>
               Need campaign details? Go to{" "}
               <Link className="text-link" href="/referral-code">
-                Goplay11 referral code
+                GoPlay11 referral code
               </Link>{" "}
               before completing signup.
             </p>

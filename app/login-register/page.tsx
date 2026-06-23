@@ -37,7 +37,7 @@ export default function LoginRegisterPage() {
     <>
       <JsonLd
         data={buildBreadcrumbSchema([
-          { name: "Home", path: "/" },
+          { name: "Home", path: "/goplay-11" },
           { name: "Login Register", path: "/login-register" },
         ])}
       />
@@ -49,7 +49,7 @@ export default function LoginRegisterPage() {
       >
         <BreadcrumbTrail
           items={[
-            { label: "Home", href: "/" },
+            { label: "Home", href: "/goplay-11" },
             { label: "Login/Register" },
           ]}
         />

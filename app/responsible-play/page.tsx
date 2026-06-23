@@ -34,7 +34,7 @@ export default function ResponsiblePlayPage() {
     <>
       <JsonLd
         data={buildBreadcrumbSchema([
-          { name: "Home", path: "/" },
+          { name: "Home", path: "/goplay-11" },
           { name: "Responsible Play", path: "/responsible-play" },
         ])}
       />
@@ -42,7 +42,7 @@ export default function ResponsiblePlayPage() {
       <PageHero eyebrow="Safety First" title={PAGE_TITLE} description={PAGE_DESCRIPTION}>
         <BreadcrumbTrail
           items={[
-            { label: "Home", href: "/" },
+            { label: "Home", href: "/goplay-11" },
             { label: "Responsible Play" },
           ]}
         />

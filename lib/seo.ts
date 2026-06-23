@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 
 import {
-  AFFILIATE_LINK,
   BUSINESS_ADDRESS,
   BUSINESS_NAME,
   DEFAULT_DESCRIPTION,
@@ -184,13 +183,13 @@ export function buildSoftwareApplicationSchema(description: string, path: string
   return {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    name: "GoPay 11",
-    alternateName: ["GoPlay11 APK", "GoPay 11 APK", "Go Play 11"],
+    name: "GoPlay11",
+    alternateName: ["GoPlay 11 APK", "GoPlay11 APK", "GoPay 11 APK", "Go Play 11"],
     operatingSystem: "Android",
     applicationCategory: "GameApplication",
     url: absoluteUrl(path),
     description,
-    downloadUrl: AFFILIATE_LINK,
+    downloadUrl: absoluteUrl("/download"),
     image: `${SITE_URL}${LOGO_PATH}`,
     publisher: {
       "@id": ORGANIZATION_ID,
@@ -284,10 +283,10 @@ export function buildWebsiteSchema() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "@id": WEBSITE_ID,
-    name: "GoPay 11 APK",
-    alternateName: ["GoPlay11", "GoPay11", "Go Pay 11"],
+    name: "GoPlay11",
+    alternateName: ["GoPlay 11 APK", "GoPlay11 APK", "GoPay11", "Go Pay 11"],
     url: SITE_URL,
-    description: "GoPay 11 APK download and GoPlay11 fantasy cricket resource hub.",
+    description: "GoPlay11 APK download and GoPlay 11 fantasy cricket resource hub.",
     publisher: {
       "@id": ORGANIZATION_ID,
     },
@@ -360,13 +359,13 @@ function buildFaqNode(items: FaqItem[]) {
 function buildSoftwareApplicationNode() {
   return {
     "@type": "SoftwareApplication",
-    name: "GoPay 11",
-    alternateName: ["GoPlay11 APK", "GoPay 11 APK", "Go Play 11"],
+    name: "GoPlay11",
+    alternateName: ["GoPlay 11 APK", "GoPlay11 APK", "GoPay 11 APK", "Go Play 11"],
     operatingSystem: "Android",
     applicationCategory: "GameApplication",
     url: `${SITE_URL}/download`,
     description:
-      "GoPay 11 is a fantasy cricket app where users build teams, join contests, and win real cash across IPL, T20, and ODI matches.",
+      "GoPlay11 is a fantasy cricket app where users build teams, join contests, and win real cash across IPL, T20, and ODI matches.",
     downloadUrl: `${SITE_URL}/download`,
     image: `${SITE_URL}${LOGO_PATH}`,
     publisher: {
@@ -385,10 +384,10 @@ function buildWebsiteNode() {
   return {
     "@type": "WebSite",
     "@id": WEBSITE_ID,
-    name: "GoPay 11 APK",
-    alternateName: ["GoPlay11", "GoPay11", "Go Pay 11"],
+    name: "GoPlay11",
+    alternateName: ["GoPlay 11 APK", "GoPlay11 APK", "GoPay11", "Go Pay 11"],
     url: SITE_URL,
-    description: "GoPay 11 APK download and GoPlay11 fantasy cricket resource hub.",
+    description: "GoPlay11 APK download and GoPlay 11 fantasy cricket resource hub.",
     publisher: {
       "@id": ORGANIZATION_ID,
     },
@@ -464,7 +463,7 @@ export function buildBlogPostGraphSchema(options: {
   const nodes: object[] = [
     buildArticleNode(options),
     buildBreadcrumbNode([
-      { name: "Home", path: "/" },
+      { name: "Home", path: "/goplay-11" },
       { name: "Blog", path: "/blog" },
       { name: options.post.title, path: options.path },
     ]),
@@ -491,7 +490,7 @@ export function buildAboutPageGraphSchema(): object {
     "@graph": [
       buildOrganizationNode(),
       buildBreadcrumbNode([
-        { name: "Home", path: "/" },
+        { name: "Home", path: "/goplay-11" },
         { name: "About", path: "/about" },
       ]),
     ],

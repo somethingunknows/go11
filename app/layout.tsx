@@ -40,17 +40,17 @@ export const metadata: Metadata = {
   publisher: SITE_NAME,
   applicationName: SITE_NAME,
   alternates: {
-    canonical: SITE_URL,
+    canonical: `${SITE_URL}/goplay-11`,
     languages: {
-      "en-IN": SITE_URL,
-      "en-US": SITE_URL,
-      "x-default": SITE_URL,
+      "en-IN": `${SITE_URL}/goplay-11`,
+      "en-US": `${SITE_URL}/goplay-11`,
+      "x-default": `${SITE_URL}/goplay-11`,
     },
   },
   openGraph: {
     title: DEFAULT_TITLE,
     description: DEFAULT_DESCRIPTION,
-    url: SITE_URL,
+    url: `${SITE_URL}/goplay-11`,
     siteName: SITE_NAME,
     type: "website",
     locale: "en_IN",

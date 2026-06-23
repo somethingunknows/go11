@@ -6,7 +6,7 @@ type CtaButtonsProps = {
 
 const CTA_ITEMS = [
   {
-    label: "Download GoPay 11 APK",
+    label: "Download GoPlay11 APK",
     className: "btn btn-primary",
   },
   {

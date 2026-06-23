@@ -1,4 +1,4 @@
-export const SITE_NAME = "GoPlay11 APK";
+export const SITE_NAME = "GoPlay11";
 
 const DEFAULT_SITE_URL = "https://gopay11apk.com";
 
@@ -22,7 +22,7 @@ function resolveSiteUrl(): string {
 
 export const SITE_URL = resolveSiteUrl();
 export const LOGO_PATH = "/go11.png";
-export const SOCIAL_PREVIEW_PATH = "/social-preview.webp";
+export const SOCIAL_PREVIEW_PATH = "/social-preview.jpg";
 
 export const AFFILIATE_LINK =
   "https://web-in.goplaycom.com/en/affiliate-invited?c=6FHW28S2&s=3";
@@ -38,15 +38,15 @@ export const PLATFORM_LINKS = [
 ] as const;
 
 export const ANCHOR = {
-  download: "Download GoPay 11 APK",
-  referral: "GoPay 11 referral code",
-  howToPlay: "How to play GoPay 11",
-  loginReg: "GoPay 11 login",
+  download: "Download GoPlay11 APK",
+  referral: "GoPlay11 referral code",
+  howToPlay: "How to play GoPlay11",
+  loginReg: "GoPlay11 login",
 } as const;
 
-export const DEFAULT_TITLE = "Go Play 11 APK Download and GoPlay11 Fantasy Guide";
+export const DEFAULT_TITLE = "GoPlay11 APK Download and GoPlay 11 Fantasy Guide";
 export const DEFAULT_DESCRIPTION =
-  "Go Play 11 APK download guide for users searching GoPlay11, Go Play 11 APK, and Go Play 11 APK download. Get setup steps, login help, and fantasy strategy tips in 2026.";
+  "GoPlay11 APK download guide for users searching GoPlay11 and GoPlay 11. Get setup steps, login help, and fantasy strategy tips in 2026.";
 
 export const BUSINESS_NAME = "GO11 Fantasy Media";
 export const SUPPORT_PHONE = "+91-80456-77881";
@@ -73,36 +73,41 @@ export const SOCIAL_PROFILES = {
 export const SOCIAL_PROFILE_LINKS = Object.values(SOCIAL_PROFILES);
 
 export const PRIMARY_KEYWORDS = [
-  "gopay 11",
-  "gopay 11 apk",
-  "gopay 11 download",
-  "gopay 11 apk download",
-  "gopay 11 app",
-  "gopay11",
-  "gopay 11 app download",
-  "go play 11",
   "goplay11",
+  "goplay 11",
   "goplay11 apk",
+  "goplay 11 apk",
+  "goplay11 download",
+  "goplay 11 download",
   "goplay11 apk download",
+  "goplay 11 apk download",
   "goplay11 app",
-  "goplay11 fantasy app",
-  "goplay11 login",
-  "goplay11 referral code",
-];
-
-export const SECONDARY_KEYWORDS = [
+  "goplay 11 app",
+  "goplay11 app download",
+  "goplay 11 app download",
+  "go play 11",
   "go play 11 apk",
   "go play 11 apk download",
   "go play11",
-  "goplay 11",
   "go play11 apk",
-  "goplay 11 apk",
-  "go play11 apk download",
-  "goplay 11 apk download",
+  "goplay11 fantasy app",
+  "goplay11 login",
+  "goplay11 referral code",
+  "gopay11",
+  "gopay 11",
+];
+
+export const SECONDARY_KEYWORDS = [
+  "gopay 11 apk",
+  "gopay 11 apk download",
+  "gopay 11 app",
+  "gopay11 apk",
+  "go pay 11",
+  "go play 11 app download",
+  "go play11 app",
   "goplay11 register",
   "goplay11 app latest version",
   "goplay11 games",
-  "gopay11 apk",
 ];
 
 export const LONG_TAIL_KEYWORDS = [
@@ -117,10 +122,9 @@ export const LONG_TAIL_KEYWORDS = [
 ];
 
 export const NAV_LINKS = [
-  { href: "/", label: "Home" },
+  { href: "/goplay-11", label: "GoPlay11" },
   { href: "/about", label: "About" },
-  { href: "/download", label: "Download GoPay 11 APK" },
-  { href: "/gopay-11", label: "GoPay 11" },
+  { href: "/download", label: "Download GoPlay11 APK" },
   { href: "/goplay11-app-download", label: "App Download" },
   { href: "/goplay11-fantasy-app", label: "Fantasy App" },
   { href: "/apk", label: "APK" },
@@ -169,24 +173,24 @@ export type FaqItem = {
 
 export const GOPAY_11_FAQS: FaqItem[] = [
   {
-    question: "What is GoPay 11?",
+    question: "What is GoPlay11?",
     answer:
-      "GoPay 11 is a commonly used alternate name for the GoPlay11 fantasy cricket app. Users searching for GoPay 11 APK or GoPay 11 download are looking for GoPlay11 — a real-money fantasy sports platform available on Android.",
+      "GoPlay11 is the primary name we use for the fantasy cricket app. Some users still search GoPay 11 APK or GoPlay 11 download when they want the same Android fantasy sports platform.",
   },
   {
-    question: "How do I download GoPay 11 APK?",
+    question: "How do I download GoPlay11 APK?",
     answer:
-      "To download GoPay 11 APK, visit the official download page at gopay11apk.com/download and tap the Download APK button. Install the file on your Android device, register, and start playing fantasy contests instantly.",
+      "To download GoPlay11 APK, visit the official download page at gopay11apk.com/download and tap the Download APK button. Install the file on your Android device, register, and start playing fantasy contests instantly.",
   },
   {
-    question: "Is GoPay 11 safe?",
+    question: "Is GoPlay11 safe?",
     answer:
-      "Yes. GoPay 11 (GoPlay11) is a skill-based fantasy platform with secure deposits, verified withdrawals, and a no-bots policy. Always download from the official site to stay safe.",
+      "Yes. GoPlay11 is a skill-based fantasy platform with secure deposits, verified withdrawals, and a no-bots policy. Always download from the official site to stay safe.",
   },
   {
-    question: "Is GoPay 11 the same as GoPlay11?",
+    question: "Is GoPlay11 the same as GoPay 11?",
     answer:
-      "Yes. GoPay 11 and GoPlay11 refer to the same fantasy cricket application. The name GoPay 11 is commonly used by players when searching for the app online.",
+      "Yes. GoPlay11 and GoPay 11 refer to the same fantasy cricket application. GoPay 11 is still a common alternate search spelling.",
   },
 ];
 

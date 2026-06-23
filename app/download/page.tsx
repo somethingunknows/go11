@@ -13,10 +13,10 @@ import {
 } from "@/lib/seo";
 import { CONTENT_LAST_REVIEWED } from "@/lib/site";
 
-const PAGE_TITLE = "GoPay 11 APK Download — Latest Version 2026 | GoPlay11";
-const H1_TITLE = "GoPay 11 APK — Download Latest Version 2026";
+const PAGE_TITLE = "GoPlay11 APK Download — Latest Version 2026 | GoPlay11";
+const H1_TITLE = "GoPlay11 APK — Download Latest Version 2026";
 const PAGE_DESCRIPTION =
-  "GoPay 11 APK (also known as GoPlay11) is now available for free download on Android. Follow the steps below to install GoPay 11 on your device and start playing fantasy cricket contests for real cash prizes.";
+  "GoPlay11 APK (also known as GoPlay11) is now available for free download on Android. Follow the steps below to install GoPlay11 on your device and start playing fantasy cricket contests for real cash prizes.";
 
 const DOWNLOAD_FEATURES = [
   "Lightweight APK",
@@ -50,13 +50,13 @@ export const metadata = buildMetadata({
   description: PAGE_DESCRIPTION,
   path: "/download",
   keywords: [
-    "gopay 11",
-    "gopay 11 apk",
-    "gopay 11 download",
+    "goplay11",
+    "goplay11 apk",
+    "goplay11 download",
     "download goplay11 app",
     "goplay11 app latest version",
-    "gopay11 download",
-    "gopay 11 apk download",
+    "goplay11 download",
+    "goplay11 apk download",
   ],
 });
 
@@ -66,7 +66,7 @@ export default function DownloadPage() {
       <JsonLd data={buildSoftwareApplicationSchema(PAGE_DESCRIPTION, "/download")} />
       <JsonLd
         data={buildBreadcrumbSchema([
-          { name: "Home", path: "/" },
+          { name: "Home", path: "/goplay-11" },
           { name: "Download", path: "/download" },
         ])}
       />
@@ -79,7 +79,7 @@ export default function DownloadPage() {
       >
         <BreadcrumbTrail
           items={[
-            { label: "Home", href: "/" },
+            { label: "Home", href: "/goplay-11" },
             { label: "Download" },
           ]}
         />
@@ -116,18 +116,18 @@ export default function DownloadPage() {
             <p>
               Continue with the{" "}
               <Link className="text-link" href="/apk">
-                GoPay 11 APK setup walkthrough
+                GoPlay11 APK setup walkthrough
               </Link>{" "}
               and then complete account onboarding with the{" "}
               <Link className="text-link" href="/login-register">
-                GoPay 11 login guide
+                GoPlay11 login guide
               </Link>
               .
             </p>
             <p>
               Want gameplay strategy after install? Use{" "}
               <Link className="text-link" href="/how-to-play">
-                How to play GoPay 11
+                How to play GoPlay11
               </Link>{" "}
               to study lineup planning basics.
             </p>

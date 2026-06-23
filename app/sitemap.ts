@@ -6,9 +6,8 @@ import { SITE_URL } from "@/lib/site";
 const STATIC_LAST_MODIFIED = new Date();
 
 const CORE_ROUTES = [
-  { path: "/", changeFrequency: "daily" as const, priority: 1.0 },
+  { path: "/goplay-11", changeFrequency: "daily" as const, priority: 1.0 },
   { path: "/download", changeFrequency: "daily" as const, priority: 0.9 },
-  { path: "/gopay-11", changeFrequency: "weekly" as const, priority: 0.9 },
   { path: "/blog", changeFrequency: "weekly" as const, priority: 0.85 },
   { path: "/goplay11-app-download", changeFrequency: "weekly" as const, priority: 0.85 },
   { path: "/goplay11-fantasy-app", changeFrequency: "weekly" as const, priority: 0.8 },

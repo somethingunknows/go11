@@ -48,7 +48,7 @@ export default function ContactPage() {
     <>
       <JsonLd
         data={buildBreadcrumbSchema([
-          { name: "Home", path: "/" },
+          { name: "Home", path: "/goplay-11" },
           { name: "Contact", path: "/contact" },
         ])}
       />
@@ -60,7 +60,7 @@ export default function ContactPage() {
       >
         <BreadcrumbTrail
           items={[
-            { label: "Home", href: "/" },
+            { label: "Home", href: "/goplay-11" },
             { label: "Contact" },
           ]}
         />

@@ -88,7 +88,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       />
       <JsonLd
         data={buildBreadcrumbSchema([
-          { name: "Home", path: "/" },
+          { name: "Home", path: "/goplay-11" },
           { name: "Blog", path: "/blog" },
           { name: post.title, path },
         ])}
@@ -99,7 +99,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         <div className="container hero-copy">
           <BreadcrumbTrail
             items={[
-              { label: "Home", href: "/" },
+              { label: "Home", href: "/goplay-11" },
               { label: "Blog", href: "/blog" },
               { label: post.title },
             ]}
@@ -132,11 +132,11 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             <p>
               Ready to apply this strategy? Go to{" "}
               <Link className="text-link" href="/download">
-                Download GoPay 11 APK
+                Download GoPlay11 APK
               </Link>{" "}
               and then use the{" "}
               <Link className="text-link" href="/how-to-play">
-                How to play GoPay 11
+                How to play GoPlay11
               </Link>{" "}
               guide.
             </p>

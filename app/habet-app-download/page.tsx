@@ -186,7 +186,7 @@ export default function HabetAppDownloadPage() {
       />
       <JsonLd
         data={buildBreadcrumbSchema([
-          { name: "Home", path: "/" },
+          { name: "Home", path: "/goplay-11" },
           { name: "Habet App Download", path: "/habet-app-download" },
         ])}
       />
@@ -199,7 +199,7 @@ export default function HabetAppDownloadPage() {
       >
         <BreadcrumbTrail
           items={[
-            { label: "Home", href: "/" },
+            { label: "Home", href: "/goplay-11" },
             { label: "Habet App Download" },
           ]}
         />

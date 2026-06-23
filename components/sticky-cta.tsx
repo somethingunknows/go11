@@ -5,7 +5,7 @@ export function StickyCta() {
     <div className="sticky-cta" role="complementary">
       <div className="container sticky-shell">
         <p className="sticky-copy">
-          Ready to install? Get the latest GoPay 11 app and claim signup rewards.
+          Ready to install? Get the latest GoPlay11 app and claim signup rewards.
         </p>
         <a
           className="btn btn-primary"
@@ -13,7 +13,7 @@ export function StickyCta() {
           rel={AFFILIATE_REL}
           target="_blank"
         >
-          Download GoPay 11 APK
+          Download GoPlay11 APK
         </a>
       </div>
     </div>

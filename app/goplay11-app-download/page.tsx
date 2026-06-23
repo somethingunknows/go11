@@ -14,16 +14,16 @@ import {
 } from "@/lib/seo";
 import { CONTENT_LAST_REVIEWED } from "@/lib/site";
 
-const PAGE_TITLE = "Goplay11 App Download - Play Fantasy Games & Win Rewards";
+const PAGE_TITLE = "GoPlay11 App Download - Play Fantasy Games & Win Rewards";
 const PAGE_DESCRIPTION =
   "Download the GoPlay11 app, install the latest GoPlay11 APK safely, and start fantasy contests with a guided setup flow.";
 
-const META_TITLE = "GoPlay11 App Download & APK Install Guide 2026 (Gopay11)";
+const META_TITLE = "GoPlay11 App Download & APK Install Guide 2026";
 const META_DESCRIPTION =
-  "Complete GoPlay11 app download guide with APK install steps, login setup, and beginner onboarding. Also covers gopay 11 and gopay11 search variants.";
+  "Complete GoPlay11 app download guide with APK install steps, login setup, and beginner onboarding. Also covers goplay11 and goplay11 search variants.";
 
 const APP_INFO = [
-  "App Name: Goplay11",
+  "App Name: GoPlay11",
   "Version: Latest 2026",
   "Size: Lightweight APK",
   "Compatibility: Android Devices",
@@ -182,11 +182,11 @@ export const metadata = buildMetadata({
     "go play11 app",
     "download goplay11 apk for android",
     "download goplay11 app",
-    "gopay 11",
-    "gopay11",
-    "gopay 11 apk",
-    "gopay 11 download",
-    "gopay 11 app download",
+    "goplay11",
+    "goplay11",
+    "goplay11 apk",
+    "goplay11 download",
+    "goplay11 app download",
   ],
 });
 
@@ -198,8 +198,8 @@ export default function Goplay11AppDownloadPage() {
       />
       <JsonLd
         data={buildBreadcrumbSchema([
-          { name: "Home", path: "/" },
-          { name: "Goplay11 App Download", path: "/goplay11-app-download" },
+  { name: "Home", path: "/goplay-11" },
+  { name: "GoPlay11 App Download", path: "/goplay11-app-download" },
         ])}
       />
       <JsonLd data={buildFaqSchema(PAGE_FAQS)} />
@@ -211,8 +211,8 @@ export default function Goplay11AppDownloadPage() {
       >
         <BreadcrumbTrail
           items={[
-            { label: "Home", href: "/" },
-            { label: "Goplay11 App Download" },
+            { label: "Home", href: "/goplay-11" },
+            { label: "GoPlay11 App Download" },
           ]}
         />
         <p className="lead-muted">

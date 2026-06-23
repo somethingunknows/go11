@@ -38,7 +38,7 @@ export default function HowToPlayPage() {
     <>
       <JsonLd
         data={buildBreadcrumbSchema([
-          { name: "Home", path: "/" },
+          { name: "Home", path: "/goplay-11" },
           { name: "How To Play", path: "/how-to-play" },
         ])}
       />
@@ -50,7 +50,7 @@ export default function HowToPlayPage() {
       >
         <BreadcrumbTrail
           items={[
-            { label: "Home", href: "/" },
+            { label: "Home", href: "/goplay-11" },
             { label: "How To Play" },
           ]}
         />

@@ -23,9 +23,9 @@ export function SiteHeader() {
     <header className="site-header">
       <div className="container header-shell">
         <div className="header-bar">
-          <Link className="brand-mark" href="/" onClick={closeMenu}>
+          <Link className="brand-mark" href="/goplay-11" onClick={closeMenu}>
             <Image
-              alt="GoPay 11 APK — GoPlay11 logo"
+              alt="GoPlay11 APK — GoPlay11 logo"
               className="brand-logo"
               height={44}
               priority
@@ -74,7 +74,7 @@ export function SiteHeader() {
             rel={AFFILIATE_REL}
             target="_blank"
           >
-            Download GoPay 11 APK
+            Download GoPlay11 APK
           </a>
         </nav>
 
@@ -82,10 +82,10 @@ export function SiteHeader() {
           className="btn btn-primary btn-compact header-cta"
           href={AFFILIATE_LINK}
           rel={AFFILIATE_REL}
-        target="_blank"
-      >
-        Download GoPay 11 APK
-      </a>
+          target="_blank"
+        >
+          Download GoPlay11 APK
+        </a>
       </div>
     </header>
   );

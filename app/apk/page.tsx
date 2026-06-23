@@ -11,9 +11,9 @@ import {
 } from "@/lib/seo";
 import { CONTENT_LAST_REVIEWED } from "@/lib/site";
 
-const PAGE_TITLE = "GoPay 11 APK - Fast Android Install and Latest Version Guide";
+const PAGE_TITLE = "GoPlay11 APK - Fast Android Install and Latest Version Guide";
 const PAGE_DESCRIPTION =
-  "Get the latest GoPay 11 APK package, review install compatibility, and complete setup in minutes for fantasy cricket and football contests.";
+  "Get the latest GoPlay11 APK package, review install compatibility, and complete setup in minutes for fantasy cricket and football contests.";
 
 const APK_HIGHLIGHTS = [
   "Small file size for faster downloads",
@@ -34,12 +34,12 @@ export const metadata = buildMetadata({
   description: PAGE_DESCRIPTION,
   path: "/apk",
   keywords: [
-    "gopay 11 apk",
-    "gopay 11 apk download",
-    "gopay 11 download",
+    "goplay11 apk",
+    "goplay11 apk download",
+    "goplay11 download",
     "goplay11 apk",
     "download goplay11 apk latest version 2026",
-    "gopay11 apk",
+    "goplay11 apk",
   ],
 });
 
@@ -49,7 +49,7 @@ export default function ApkPage() {
       <JsonLd data={buildSoftwareApplicationSchema(PAGE_DESCRIPTION, "/apk")} />
       <JsonLd
         data={buildBreadcrumbSchema([
-          { name: "Home", path: "/" },
+          { name: "Home", path: "/goplay-11" },
           { name: "APK", path: "/apk" },
         ])}
       />
@@ -61,7 +61,7 @@ export default function ApkPage() {
       >
         <BreadcrumbTrail
           items={[
-            { label: "Home", href: "/" },
+            { label: "Home", href: "/goplay-11" },
             { label: "APK" },
           ]}
         />
@@ -73,7 +73,7 @@ export default function ApkPage() {
         <div className="container card">
           <h2>Why users search for Goplay11 APK</h2>
           <p>
-            Most users search for GoPay 11 APK because they want direct setup speed.
+            Most users search for GoPlay11 APK because they want direct setup speed.
             This page is focused on practical steps and clean source verification.
           </p>
           <ul className="tick-list">
@@ -110,7 +110,7 @@ export default function ApkPage() {
             <p>
               For a direct installation path, use{" "}
               <Link className="text-link" href="/download">
-                Download GoPay 11 APK
+                Download GoPlay11 APK
               </Link>
               .
             </p>
