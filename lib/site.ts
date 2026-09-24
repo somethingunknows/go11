@@ -25,7 +25,7 @@ export const LOGO_PATH = "/go11.png";
 export const SOCIAL_PREVIEW_PATH = "/social-preview.jpg";
 
 export const AFFILIATE_LINK =
-  "https://web-in.goplaycom.com/en/affiliate-invited?c=WWWXXUA5VY&s=1";
+  "https://web-in.goplayspring.com/en/affiliate-invited?c=WWWXXDR7E2&s=1";
 export const RECOMMENDED_PLATFORM_URL = "https://www.comegameapp.com";
 export const AFFILIATE_REL = "nofollow sponsored noopener noreferrer";
 export const EXTERNAL_REL = "nofollow noopener noreferrer";
