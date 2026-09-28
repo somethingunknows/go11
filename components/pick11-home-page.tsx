@@ -13,6 +13,7 @@ import {
 } from "@/lib/site";
 
 const DOWNLOAD_URL = AFFILIATE_LINK;
+const COME_APK_DOWNLOAD_URL = "https://cp1.my/B2TDFG/dzyitzm";
 
 const HERO_HIGHLIGHTS = [
   "Fast withdrawals",
@@ -218,23 +219,34 @@ export function Pick11HomePage({
               Build your XI, track matches live, and withdraw your winnings straight
               to your bank account. Download the app free and get started today.
             </p>
-            <div className="pick11-hero-chip-row">
+          
+            <div className="pick11-hero-btn-group">
+            <a
+              className="pick11-hero-btn"
+              href={DOWNLOAD_URL}
+              rel={AFFILIATE_REL}
+              target="_blank"
+            >
+              Download GoPlay 11
+              <span aria-hidden="true">{"->"}</span>
+            </a>
+
+            <a
+              className="pick11-hero-btn"
+              href={COME_APK_DOWNLOAD_URL}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Download Come APK
+              <span aria-hidden="true">{"->"}</span>
+            </a>
+          </div>
+      <div className="pick11-hero-chip-row">
               {HERO_HIGHLIGHTS.map((highlight) => (
                 <span className="pick11-hero-chip" key={highlight}>
                   {highlight}
                 </span>
               ))}
-            </div>
-            <div className="pick11-hero-btn-group">
-              <a
-                className="pick11-hero-btn"
-                href={DOWNLOAD_URL}
-                rel={AFFILIATE_REL}
-                target="_blank"
-              >
-                Download GoPlay 11
-                <span aria-hidden="true">{"->"}</span>
-              </a>
             </div>
           </div>
         </div>
