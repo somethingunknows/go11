@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import {
   AFFILIATE_LINK,
   AFFILIATE_REL,
+  COME_APK_DOWNLOAD_URL as SITE_COME_APK_DOWNLOAD_URL,
   CONTENT_LAST_REVIEWED,
   EXTERNAL_REL,
   GOPAY_11_FAQS,
@@ -13,7 +14,9 @@ import {
 } from "@/lib/site";
 
 const DOWNLOAD_URL = AFFILIATE_LINK;
-const COME_APK_DOWNLOAD_URL = "https://cp1.my/B2TDFG/dzyitzm";
+const COME_APK_DOWNLOAD_URL =
+  process.env.NEXT_PUBLIC_COME_APK_DOWNLOAD_URL?.trim() ||
+  SITE_COME_APK_DOWNLOAD_URL;
 
 const HERO_HIGHLIGHTS = [
   "Fast withdrawals",
@@ -234,7 +237,7 @@ export function Pick11HomePage({
             <a
               className="pick11-hero-btn"
               href={COME_APK_DOWNLOAD_URL}
-              rel="noopener noreferrer"
+              rel={AFFILIATE_REL}
               target="_blank"
             >
               Download Come APK

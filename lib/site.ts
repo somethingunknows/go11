@@ -26,6 +26,12 @@ export const SOCIAL_PREVIEW_PATH = "/social-preview.jpg";
 
 export const AFFILIATE_LINK =
   "https://web-in.goplayspring.com/en/affiliate-invited?c=WWWXXDR7E2&s=1";
+export const DEFAULT_COME_APK_DOWNLOAD_URL =
+  "https://web-in.comewindnet.com/en/affiliate-invited?c=WWWXB8K93&s=3";
+export const COME_APK_DOWNLOAD_URL =
+  process.env.NEXT_PUBLIC_COME_APK_DOWNLOAD_URL?.trim() ||
+  process.env.COME_APK_DOWNLOAD_URL?.trim() ||
+  DEFAULT_COME_APK_DOWNLOAD_URL;
 export const RECOMMENDED_PLATFORM_URL = "https://www.comegameapp.com";
 export const AFFILIATE_REL = "nofollow sponsored noopener noreferrer";
 export const EXTERNAL_REL = "nofollow noopener noreferrer";
