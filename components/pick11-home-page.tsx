@@ -13,7 +13,7 @@ import {
 } from "@/lib/site";
 
 const DOWNLOAD_URL = AFFILIATE_LINK;
-const COME_APK_DOWNLOAD_URL = "https://cp1.my/B2TDFG/dzyitzm";
+const COME_APK_DOWNLOAD_URL = "https://cp7.me/B2TDFG/dzyitzm";
 
 const HERO_HIGHLIGHTS = [
   "Fast withdrawals",
