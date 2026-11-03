@@ -17,7 +17,7 @@ const DOWNLOAD_URL = AFFILIATE_LINK;
 
 const COME_APK_DOWNLOAD_URL =
   process.env.NEXT_PUBLIC_COME_APK_DOWNLOAD_URL?.trim() ||
-  "https://cp7.me/B2TDFG/dzyitzm";
+  'https://cp7.me/B2TDFG/dzyitzm';
 
 const HERO_HIGHLIGHTS = [
   "Fast withdrawals",
