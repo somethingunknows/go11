@@ -16,8 +16,8 @@ import {
 const DOWNLOAD_URL = AFFILIATE_LINK;
 
 const COME_APK_DOWNLOAD_URL =
-  process.env.NEXT_PUBLIC_COME_APK_DOWNLOAD_URL?.trim() ||
-  'https://cp7.me/B2TDFG/dzyitzm';
+  process.env.COME_APK_DOWNLOAD_URL?.trim() ||
+  SITE_COME_APK_DOWNLOAD_URL;
 
 const HERO_HIGHLIGHTS = [
   "Fast withdrawals",
@@ -184,7 +184,9 @@ type Pick11HomePageProps = {
 export function Pick11HomePage({
   initialExperienceIndex = EXPERIENCE_STEPS.length - 1,
 }: Pick11HomePageProps) {
-  const [experienceIndex, setExperienceIndex] = useState(initialExperienceIndex);
+  const [experienceIndex, setExperienceIndex] = useState(
+    initialExperienceIndex,
+  );
 
   useEffect(() => {
     document.body.classList.add("home-template-active");
@@ -217,35 +219,37 @@ export function Pick11HomePage({
               GoPlay 11 — Download & Play Fantasy Cricket
             </h1>
             <p className="pick11-hero-desc">
-              Create your dream team, join contests, and win daily with GoPlay 11.
+              Create your dream team, join contests, and win daily with GoPlay
+              11.
             </p>
             <p className="pick11-hero-search-terms">
-              Build your XI, track matches live, and withdraw your winnings straight
-              to your bank account. Download the app free and get started today.
+              Build your XI, track matches live, and withdraw your winnings
+              straight to your bank account. Download the app free and get
+              started today.
             </p>
-          
-            <div className="pick11-hero-btn-group">
-            <a
-              className="pick11-hero-btn"
-              href={DOWNLOAD_URL}
-              rel={AFFILIATE_REL}
-              target="_blank"
-            >
-              Download GoPlay 11
-              <span aria-hidden="true">{"->"}</span>
-            </a>
 
-            <a
-              className="pick11-hero-btn"
-              href={COME_APK_DOWNLOAD_URL}
-              rel={AFFILIATE_REL}
-              target="_blank"
-            >
-              Download Come APK
-              <span aria-hidden="true">{"->"}</span>
-            </a>
-          </div>
-      <div className="pick11-hero-chip-row">
+            <div className="pick11-hero-btn-group">
+              <a
+                className="pick11-hero-btn"
+                href={DOWNLOAD_URL}
+                rel={AFFILIATE_REL}
+                target="_blank"
+              >
+                Download GoPlay 11
+                <span aria-hidden="true">{"->"}</span>
+              </a>
+
+              <a
+                className="pick11-hero-btn"
+                href={COME_APK_DOWNLOAD_URL}
+                rel={AFFILIATE_REL}
+                target="_blank"
+              >
+                Download Come APK
+                <span aria-hidden="true">{"->"}</span>
+              </a>
+            </div>
+            <div className="pick11-hero-chip-row">
               {HERO_HIGHLIGHTS.map((highlight) => (
                 <span className="pick11-hero-chip" key={highlight}>
                   {highlight}
@@ -260,10 +264,10 @@ export function Pick11HomePage({
         <div className="pick11-section-container">
           <h2>What Is GoPlay 11?</h2>
           <p>
-            GoPlay 11 is a fantasy cricket platform where you build a dream XI from
-            real players and compete in skill-based contests across leagues like
-            the IPL, T20 World Cup, and Big Bash. Every contest runs on live match
-            data, so your points update as the game happens.
+            GoPlay 11 is a fantasy cricket platform where you build a dream XI
+            from real players and compete in skill-based contests across leagues
+            like the IPL, T20 World Cup, and Big Bash. Every contest runs on
+            live match data, so your points update as the game happens.
           </p>
           <p>
             The app focuses on three things that matter most to fantasy players:
@@ -288,11 +292,11 @@ export function Pick11HomePage({
             <h3>Getting Started</h3>
             <p>
               After installing the app, you will go through a short signup flow
-              before landing in the match lobby. From there, everything centres on
-              the fixture calendar: pick an upcoming match, review the squad list
-              for both sides, and build your fantasy team within your budget. The
-              interface labels player roles and credit values clearly, so it is
-              easy to follow even on your first contest.
+              before landing in the match lobby. From there, everything centres
+              on the fixture calendar: pick an upcoming match, review the squad
+              list for both sides, and build your fantasy team within your
+              budget. The interface labels player roles and credit values
+              clearly, so it is easy to follow even on your first contest.
             </p>
             <p>
               Team selection stays entirely in your hands. There is no automated
@@ -303,51 +307,52 @@ export function Pick11HomePage({
 
             <h3>Installing on Android</h3>
             <p>
-              Since the app is distributed outside the Play Store, your phone will
-              likely prompt you to allow installs from unknown sources the first
-              time. That is a standard Android security step and not specific to
-              this app, but it is still worth confirming you downloaded from the
-              official link before continuing.
+              Since the app is distributed outside the Play Store, your phone
+              will likely prompt you to allow installs from unknown sources the
+              first time. That is a standard Android security step and not
+              specific to this app, but it is still worth confirming you
+              downloaded from the official link before continuing.
             </p>
             <p>
               First launch takes you through account verification — usually a
-              phone number and an OTP check. This protects your account and makes
-              sure winnings can be withdrawn to the right person later, so it is
-              worth using your own number rather than skipping ahead.
+              phone number and an OTP check. This protects your account and
+              makes sure winnings can be withdrawn to the right person later, so
+              it is worth using your own number rather than skipping ahead.
             </p>
 
             <h3>Building a Smarter Team</h3>
             <p>
               New players often pick based on reputation alone. More experienced
               players weigh recent form, pitch conditions, and how a player has
-              performed against the specific opposition. A batsman in poor recent
-              form is rarely a safer pick than a less well-known player who has
-              been scoring consistently.
+              performed against the specific opposition. A batsman in poor
+              recent form is rarely a safer pick than a less well-known player
+              who has been scoring consistently.
             </p>
             <p>
               Budget discipline matters just as much. Spending heavily on one or
-              two premium picks tends to leave weak spots elsewhere in the lineup.
-              A mix of a couple of strong picks with several dependable mid-range
-              players usually holds up better across a full tournament.
+              two premium picks tends to leave weak spots elsewhere in the
+              lineup. A mix of a couple of strong picks with several dependable
+              mid-range players usually holds up better across a full
+              tournament.
             </p>
 
             <h3>Following the Match Live</h3>
             <p>
-              Watching your team's score update as the match unfolds is one of the
-              main reasons players keep coming back — every run, wicket, and catch
-              feeds straight into your points. Notifications for milestones and
-              contest results mean you can stay on top of things without keeping
-              the app open the whole time.
+              Watching your team's score update as the match unfolds is one of
+              the main reasons players keep coming back — every run, wicket, and
+              catch feeds straight into your points. Notifications for
+              milestones and contest results mean you can stay on top of things
+              without keeping the app open the whole time.
             </p>
 
             <h3>Withdrawals and Account Safety</h3>
             <p>
               A verified bank account linked to your profile is required before
               any withdrawal request can be processed. This is a standard
-              safeguard against fraudulent claims, not a hurdle to slow you down.
-              Keeping your bank details accurate from the start avoids delays
-              later, so it is worth setting this up before your first big win
-              rather than after.
+              safeguard against fraudulent claims, not a hurdle to slow you
+              down. Keeping your bank details accurate from the start avoids
+              delays later, so it is worth setting this up before your first big
+              win rather than after.
             </p>
 
             <h3>Playing Responsibly</h3>
@@ -373,13 +378,13 @@ export function Pick11HomePage({
               </h2>
               <div className="pick11-title-bar" />
               <p className="pick11-about-text">
-                Welcome to <strong>GoPlay 11</strong>, where your passion for sports meets
-                strategy. We are not just a fantasy platform. We are a community built for
-                serious fans.
+                Welcome to <strong>GoPlay 11</strong>, where your passion for
+                sports meets strategy. We are not just a fantasy platform. We
+                are a community built for serious fans.
               </p>
               <p className="pick11-about-muted">
-                Our mission is to deliver a transparent, secure, and fast gameplay
-                experience for every type of player.
+                Our mission is to deliver a transparent, secure, and fast
+                gameplay experience for every type of player.
               </p>
               <ul className="pick11-about-list">
                 {ABOUT_POINTS.map((point) => (
@@ -440,7 +445,10 @@ export function Pick11HomePage({
             <h2>
               EXPERIENCE <span>GOPLAY 11</span>
             </h2>
-            <p>Seamless gameplay, clean interface, and exciting features in one app.</p>
+            <p>
+              Seamless gameplay, clean interface, and exciting features in one
+              app.
+            </p>
           </header>
 
           <div className="pick11-experience-content">
@@ -463,7 +471,10 @@ export function Pick11HomePage({
             <div className="pick11-step-stack">
               {EXPERIENCE_STEPS.map((step, index) => (
                 <button
-                  className={cn("pick11-step-card", index === experienceIndex && "active")}
+                  className={cn(
+                    "pick11-step-card",
+                    index === experienceIndex && "active",
+                  )}
                   key={step.title}
                   onClick={() => setExperienceIndex(index)}
                   type="button"
@@ -479,7 +490,10 @@ export function Pick11HomePage({
               <div className="pick11-exp-dots">
                 {EXPERIENCE_STEPS.map((step, index) => (
                   <div
-                    className={cn("pick11-exp-dot", index === experienceIndex && "active")}
+                    className={cn(
+                      "pick11-exp-dot",
+                      index === experienceIndex && "active",
+                    )}
                     key={step.subtitle}
                   />
                 ))}
@@ -564,12 +578,11 @@ export function Pick11HomePage({
             <h2>Editorial Transparency</h2>
             <p>
               We publish practical guides for players looking to install and get
-              started with GoPlay 11. Pages are updated whenever we detect changes
-              to the install or onboarding flow.
+              started with GoPlay 11. Pages are updated whenever we detect
+              changes to the install or onboarding flow.
             </p>
             <p>
-              Review process details are available on our
-              {" "}
+              Review process details are available on our{" "}
               <a className="text-link" href="/editorial-policy">
                 Editorial Policy
               </a>{" "}

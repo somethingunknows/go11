@@ -27,9 +27,8 @@ export const SOCIAL_PREVIEW_PATH = "/social-preview.jpg";
 export const AFFILIATE_LINK =
   "https://web-in.goplayspring.com/en/affiliate-invited?c=WWWXXDR7E2&s=1";
 export const DEFAULT_COME_APK_DOWNLOAD_URL =
-  "https://cp7.me/B2TDFG/dzyitzm";
+  "https://web-in.comewindnet.com/en/affiliate-invited?c=WWWXB8K93&s=3";
 export const COME_APK_DOWNLOAD_URL =
-  process.env.NEXT_PUBLIC_COME_APK_DOWNLOAD_URL?.trim() ||
   process.env.COME_APK_DOWNLOAD_URL?.trim() ||
   DEFAULT_COME_APK_DOWNLOAD_URL;
 export const RECOMMENDED_PLATFORM_URL = "https://www.comegameapp.com";
@@ -37,10 +36,10 @@ export const AFFILIATE_REL = "nofollow sponsored noopener noreferrer";
 export const EXTERNAL_REL = "nofollow noopener noreferrer";
 
 export const PLATFORM_LINKS = [
-  { href: "https://ak7x.games",   label: "ak7x App — Mobile Gaming" },
+  { href: "https://ak7x.games", label: "ak7x App — Mobile Gaming" },
   { href: "https://habetapk.com", label: "Habet App — Sports Betting" },
-  { href: "https://dhan7.xyz",    label: "Dhan 7 App — Real Money Gaming" },
-  { href: "https://ak7-apk.com",  label: "AK7 APK — Gaming App" },
+  { href: "https://dhan7.xyz", label: "Dhan 7 App — Real Money Gaming" },
+  { href: "https://ak7-apk.com", label: "AK7 APK — Gaming App" },
 ] as const;
 
 export const ANCHOR = {
@@ -50,7 +49,8 @@ export const ANCHOR = {
   loginReg: "GoPlay11 login",
 } as const;
 
-export const DEFAULT_TITLE = "GoPlay11 APK Download and GoPlay 11 Fantasy Guide";
+export const DEFAULT_TITLE =
+  "GoPlay11 APK Download and GoPlay 11 Fantasy Guide";
 export const DEFAULT_DESCRIPTION =
   "GoPlay11 APK download guide for users searching GoPlay11 and GoPlay 11. Get setup steps, login help, and fantasy strategy tips in 2026.";
 

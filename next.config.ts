@@ -10,6 +10,9 @@ const LEGACY_HOSTS = [
 ];
 
 const nextConfig: NextConfig = {
+  env: {
+    COME_APK_DOWNLOAD_URL: process.env.COME_APK_DOWNLOAD_URL || "",
+  },
   turbopack: {
     root: __dirname,
   },
